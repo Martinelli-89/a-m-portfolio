@@ -1,13 +1,17 @@
-
 import './App.scss';
 
-const App = () => {
+import { useState } from 'react';
+import Logo from './Components/Logo/Logo.jsx';
+
+const App = () => {;
+
+  const [showLogo, setShowLogo] = useState(false);
 
   return (
     <div className="App">
-      Portfolio
+      <Logo />
     </div>
   );
-}
+};
 
 export default App;
