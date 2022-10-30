@@ -1,6 +1,8 @@
 import './App.scss';
 
 import { useState } from 'react';
+import projectsInfo from "./Assets/Data/ProjectsData.js"
+
 import MainDisplay from "./Components/MainDisplay/MainDisplay.jsx";
 import Nav from './Components/Nav/Nav.jsx';
 
@@ -53,7 +55,7 @@ const App = () => {;
         <Nav menu={navOptions} handleClick={handleNavClick}/>
       </nav>
       <main>
-        <MainDisplay  aboutMe={isAboutMe} projects={isProjects} contacts={isContacts}/>
+        <MainDisplay  aboutMe={isAboutMe} projects={isProjects} contacts={isContacts} data={projectsInfo}/>
       </main>    
     </div>
   );

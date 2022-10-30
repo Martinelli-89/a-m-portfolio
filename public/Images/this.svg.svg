@@ -1,0 +1,15 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+	<title>New Project</title>
+	<defs>
+		<image  width="300" height="300" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsAQMAAABDsxw2AAAAAXNSR0IB2cksfwAAAANQTFRFAAAAp3o92gAAAAF0Uk5TAEDm2GYAAAAiSURBVHic7cExAQAAAMKg9U9tCj+gAAAAAAAAAAAAAAB4GS20AAFmdDNkAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre } 
+		.t0 { font-size: 100px;fill: #f7768e;font-weight: 400;font-family: "FiraCode-Regular", "Fira Code" } 
+	</style>
+	<use id="Background" href="#img1" x="0" y="0"/>
+	<text id=".this" style="transform: matrix(1,0,0,1,-6,108)" >
+		<tspan x="0" y="74.7" class="t0">.</tspan><tspan  y="74.7" class="t0">t</tspan><tspan  y="74.7" class="t0">h</tspan><tspan  y="74.7" class="t0">i</tspan><tspan  y="74.7" class="t0">s
+</tspan>
+	</text>
+</svg>

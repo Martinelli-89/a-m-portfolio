@@ -18,9 +18,8 @@
         }
     }
 
-
     .const {
-        color: #c0caf5;
+        color: #b0bae6;
         font-style: italic;
     }
 
@@ -44,4 +43,12 @@
         color: #f7768e
     }
 
+}
+
+.description {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
 }

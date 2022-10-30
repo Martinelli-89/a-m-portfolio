@@ -4,15 +4,16 @@ import "./MainDisplay.scss";
 
 import Logo from "../Logo/Logo.jsx";
 import AboutMe from '../AboutMe/AboutMe.jsx';
+import Projects from "../Projects/Projects.jsx";
 
-const MainDisplay = ({aboutMe, projects, contacts}) => {
+const MainDisplay = ({aboutMe, projects, contacts, data}) => {
 
     let render;
 
     if(aboutMe==false && projects==false && contacts==false) {
         render =<> 
                 <Logo />
-                <h2>Junior Software Developer</h2>;
+                <h2>Junior Software Developer</h2>
                 </>
     }
 
@@ -21,7 +22,7 @@ const MainDisplay = ({aboutMe, projects, contacts}) => {
     }
 
     if(projects == true) {
-        render = <p>Projects</p>
+        render = <Projects data={data} />
     }
 
     if(contacts == true) {
