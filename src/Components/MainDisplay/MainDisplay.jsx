@@ -3,17 +3,21 @@ import {React, useState} from 'react';
 import "./MainDisplay.scss";
 
 import Logo from "../Logo/Logo.jsx";
+import AboutMe from '../AboutMe/AboutMe.jsx';
 
 const MainDisplay = ({aboutMe, projects, contacts}) => {
 
     let render;
 
     if(aboutMe==false && projects==false && contacts==false) {
-        render = <Logo />;
+        render =<> 
+                <Logo />
+                <h2>Junior Software Developer</h2>;
+                </>
     }
 
     if(aboutMe == true) {
-        render = <p>About me</p>
+        render = <AboutMe />;
     }
 
     if(projects == true) {
