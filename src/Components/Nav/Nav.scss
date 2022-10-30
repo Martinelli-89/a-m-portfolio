@@ -1,0 +1,37 @@
+@use "../../Styles/Fonts.scss" as *;
+
+.nav {
+
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    font-family: $main;
+    grid-template-areas: "left middle right";
+    justify-content: center;
+    animation: display 6s  2s forwards;
+    opacity: 0%;
+
+    &__left{
+        grid-area: left;
+        color: #b4f9f8;
+        justify-self: flex-start;
+    }
+
+    &__middle {
+        grid-area: middle;
+        color: #ff9e64;
+        justify-self: center;
+    }
+
+    &__right {
+        grid-area: right;
+        color: #b4f9f8;
+        justify-self: end;
+    }
+
+}
+
+@keyframes display {
+    from{opacity: 0%;}
+    to{opacity: 100%;}
+}

@@ -2,6 +2,7 @@ import './App.scss';
 
 import { useState } from 'react';
 import Logo from './Components/Logo/Logo.jsx';
+import Nav from './Components/Nav/Nav.jsx';
 
 const App = () => {;
 
@@ -9,7 +10,12 @@ const App = () => {;
 
   return (
     <div className="App">
-      <Logo />
+      <nav>
+        <Nav />
+      </nav>
+      <main>
+        <Logo />
+      </main>    
     </div>
   );
 };
