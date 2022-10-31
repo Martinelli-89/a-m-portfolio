@@ -29,7 +29,7 @@ const AboutMe = () => {
                     startDelay={500}
                     cursorColor="#7aa2f7"
                     text={text}
-                    typeSpeed={150}
+                    typeSpeed={120}
                 />
             </div>
         </>
