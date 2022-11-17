@@ -40,7 +40,6 @@ const Card = ({project, imgSource, cardId, keyLastCardFlipped, toggleKeyLastCard
         </div>
         <div  className="card__face card__face--back">
         {imgSource==="/Images/"? <h3>.this</h3> : <img src={imgSource}></img>}
-        {project ? <p>{project}</p> : ""}
         </div>
         </button>
     </div>

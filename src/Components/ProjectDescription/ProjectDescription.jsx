@@ -9,10 +9,13 @@ const ProjectDescription = ({active, data}) => {
     } else {
 
         render = <>
-                    <p>{data[active].projName}</p>
+                    <h3>{data[active].projName}</h3>
                     <p>{data[active].description}</p>
                     <p>{data[active].code.join(" ")}</p>
-                    <a href={data[active].link} target="_blank">Link</a>
+                    <div className="links">
+                        <a href={data[active].link} target="_blank">Link</a>
+                        <a href={data[active].repo} target="_blank">Repo</a>
+                    </div>
                 </>;
 
     }

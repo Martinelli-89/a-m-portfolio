@@ -2,36 +2,63 @@
 
 .nav {
 
-    width: 90%;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    font-family: $main;
-    grid-template-areas: "left middle right";
-    justify-content: center;
-    animation: display 6s  2s forwards;
-    opacity: 0%;
+    width: 100%;
+    display: flex;
+    height: 5%;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 
-    &__left{
-        grid-area: left;
-        color: #b4f9f8;
-        justify-self: flex-start;
+    &__logo {
+        width: 3rem;
+        animation: slideRight 1s 1s forwards ease-out;
+        transform: translateX(-10rem);
     }
 
-    &__middle {
-        grid-area: middle;
-        color: #ff9e64;
-        justify-self: center;
-    }
-
-    &__right {
-        grid-area: right;
-        color: #b4f9f8;
-        justify-self: end;
+    &__buttons {
+        display: flex;
+        justify-content: space-around;
+        transform: 
+            rotateX(-180deg)
+            translateY(10rem);
+        animation: fallIn 2s 1s forwards ease-out;
     }
 
 }
 
-@keyframes display {
-    from{opacity: 0%;}
-    to{opacity: 100%;}
+@keyframes slideRight {
+    0% {
+        transform: translateX(-10rem);
+    }
+    70% {
+        transform: translateX(2rem);
+    }
+    100% {
+        transform: translateX(0rem);
+    }
+}
+
+@keyframes fallIn {
+    0% {
+        transform: 
+            rotateX(-180deg)
+            translateY(10rem);
+    }
+    50% {
+        transform: 
+            rotateX(-180deg)
+            translateY(-2rem);
+    }
+    75% {
+        transform: 
+            rotateX(-90deg)
+            translateY(-2rem);
+    }
+    100% {
+        transform: 
+            rotateX(0deg)
+            translateY(0rem);
+    }
 }
