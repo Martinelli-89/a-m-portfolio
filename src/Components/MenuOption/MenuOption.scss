@@ -1,0 +1,9 @@
+@use "../../Styles/Fonts.scss" as *;
+
+.text {
+    
+    margin-top: 0.7rem;
+    padding-left: 0.4rem;
+    font-family: $main;
+    color: #cfc9c2;
+}

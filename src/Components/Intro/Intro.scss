@@ -1,0 +1,75 @@
+@use "../../Styles/Fonts.scss" as *;
+
+.intro {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: $main;
+    line-height: 2.5rem;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    font-weight:900;
+    letter-spacing: 0.15rem;
+
+}
+
+.fadeIn {
+    width: 100%;
+
+
+    &__char {
+        color: #cfc9c2;
+        animation: fadeIn 0.3s forwards ease-out;
+        opacity: 0;
+        min-height: 2.5rem;
+        max-height: 2.5rem;
+    }
+
+    &__name {
+        color:#bb9af7;
+        text-shadow: 2px 2px #cfc9c2;
+        animation: fadeIn 0.3s forwards ease-out;
+        opacity: 0;
+        min-height: 2.5rem;
+        max-height: 2.5rem;
+    }
+
+}
+
+@for $i from 1 through 34 {
+    .fadeIn span:nth-child(#{$i}n) {
+        animation-delay: #{$i* 0.07}s;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+        font-size: 1.2rem;
+    }
+    70% {
+        font-size: 2.3rem;
+    }
+    100% {
+        opacity: 1;
+        font-size: 1.5rem;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        font-size: 1.2rem;
+    }
+    70% {
+        font-size: 2.3rem;
+    }
+    100% {
+        opacity: 1;
+        font-size: 1.5rem;
+    }
+}
+
+
