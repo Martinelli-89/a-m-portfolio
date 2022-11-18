@@ -1,5 +1,12 @@
 @use "../../Styles/Fonts.scss" as *;
 
+.menu { 
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-right: 5rem;
+}
+
 .button {
 
     width: 6rem;
@@ -7,6 +14,7 @@
     position: relative;
     font-size: 0.9rem;
     font-family: $main;
+    margin-bottom: 0.75rem;
 
     &__front {
         width: 100%;
@@ -20,6 +28,7 @@
         position: absolute;
         z-index: 1;
         border-radius: 4px;
+        animation: clickOut 0.5s forwards ease-in;
     }
 
     &__back {
@@ -35,7 +44,25 @@
     }
 
     &__click {
-        animation: click 0.25s forwards ease-in;
+        animation: click 0.5s forwards ease-in;
+    }
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 0.9rem;
+}
+
+.menuOption {
+    &__line {
+        border: 1.5px solid #bb9af7;
+        width: 102%;
+        border-radius: 5px;
+        transform: translateX(10rem);
+        animation: slideIn 0.8s forwards ease-out;
     }
 }
 
@@ -44,11 +71,47 @@
         transform: translate(0rem,0rem);
         color:#cfc9c2;
     }
-    50% {
-        color: #cfc9c2;
-    } 
     100% {
         transform: translate(0.25rem, 0.25rem);
         color: #bb9af7;
+        box-shadow: 0 0 0.1rem #cfc9c2,
+            0 0 0.1rem #cfc9c2,
+            0 0 0.1rem #bb9af7,
+            0 0 0.1rem #bb9af7,
+            0 0 0.1rem #bb9af7,
+            inset 0 0 1rem #bb9af7; 
+    }
+}
+
+@keyframes clickOut {
+    0% {
+        transform: translate(0.25rem,0.25rem);
+        box-shadow: 0 0 0.1rem #cfc9c2,
+        0 0 0.1rem #cfc9c2,
+        0 0 0.1rem #bb9af7,
+        0 0 0.1rem #bb9af7,
+        0 0 0.1rem #bb9af7,
+        inset 0 0 1rem #bb9af7; 
+    }
+    30% {
+        box-shadow: 0 0 0.1rem #cfc9c2,
+        0 0 0.1rem #cfc9c2,
+        0 0 0.1rem #bb9af7,
+        0 0 0.1rem #bb9af7,
+        0 0 0.1rem #bb9af7,
+        inset 0 0 1rem #bb9af7; 
+    } 
+    100% {
+        transform: translate(0rem, 0rem);
+        color: #cfc9c2;
+    }
+}
+
+@keyframes slideIn {
+    0%{
+        transform: translateX(10rem);
+    }
+    100%{
+        transform: translateX(0rem);
     }
 }

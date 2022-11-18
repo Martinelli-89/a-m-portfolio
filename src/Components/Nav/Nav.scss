@@ -10,10 +10,11 @@
     padding-top: 1rem;
     padding-left: 2rem;
     padding-right: 2rem;
+    position: sticky;
 
     &__logo {
         width: 3rem;
-        animation: slideRight 1s 1s forwards ease-out;
+        animation: slideRight 2s 1s forwards ease-out;
         transform: translateX(-10rem);
     }
 
