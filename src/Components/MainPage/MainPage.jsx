@@ -1,6 +1,7 @@
 import {React} from 'react';
 import Nav from '../Nav/Nav';
 import Intro from '../Intro/Intro';
+import SideNav from "../SideNav/SideNav";
 
 import "./MainPage.scss";
 
@@ -14,6 +15,9 @@ const MainPage = () => {
             </div>
             <div className='mainPage__intro'>
                 <Intro />
+            </div>
+            <div className='mainPage__sideNav'>
+                <SideNav />
             </div>
         </main>
 
