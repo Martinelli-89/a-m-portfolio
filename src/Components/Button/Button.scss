@@ -59,16 +59,6 @@
 
 }
 
-.menuOption {
-    &__line {
-        border: 1.5px solid #bb9af7;
-        width: 102%;
-        border-radius: 5px;
-        transform: translateX(10rem);
-        animation: slideIn 0.8s forwards ease-out;
-    }
-}
-
 @keyframes click {
     0% {
         transform: translate(0rem,0rem);
@@ -107,17 +97,5 @@
     100% {
         transform: translate(0rem, 0rem);
         color: #cfc9c2;
-    }
-}
-
-@keyframes slideIn {
-    0%{
-        transform: translateX(10rem);
-    }
-    70%{
-        transform: translateX(-1rem);
-    }
-    100%{
-        transform: translateX(0rem);
     }
 }
