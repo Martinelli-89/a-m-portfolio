@@ -6,4 +6,17 @@
     padding-left: 0.4rem;
     font-family: $main;
     color: #cfc9c2;
+    animation: fallIn 1s forwards ease-out;
+    transform: translateX(10rem);
+    position: relative;
+    z-index: -1;
+}
+
+@keyframes fallIn {
+    0% {
+        transform: translateX(10rem);
+    }
+    100% {
+        transform: translateX(0rem);
+    }
 }

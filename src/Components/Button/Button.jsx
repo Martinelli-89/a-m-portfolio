@@ -14,8 +14,8 @@ const Button = ({text, onClick, options}) => {
     const menuOptions = options.map((option, index) => {
         const delay = (index+1)* 0.3;
         return (
-            <div className="menuOption">
-                <MenuOption text={option} key={index*Math.random()} animate={click}/>
+            <div className="menuOption" key={index*Math.random()}>
+                <MenuOption text={option} animate={click} delay={delay}/>
                 <div className={"menuOption__line"} style={{animationDelay:`${delay}s`}}></div>
             </div>
         )
