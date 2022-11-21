@@ -1,0 +1,52 @@
+@use "../../Styles/Fonts.scss" as *;
+
+.resume {
+    min-height: 92vh;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.career {
+    width: 80vw;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 30% 20% 50%;
+    grid-template-rows: 10% 90%;
+    grid-template-areas: 
+        "dates dates dates"
+        "chart resume resume";
+    font-family: $main;
+    justify-items: center;
+
+    &__chart {
+        grid-area: chart;
+        height: 90%;
+        aspect-ratio: 1 / 1;
+        place-self: center;
+        transform: rotate(-180deg);
+    }
+
+    &__dates {
+        grid-area: dates;
+        display: flex;
+        justify-content: space-between;
+        color: #bb9af7;
+        font-size: 0.8rem;
+        align-self:flex-end;
+        justify-self: stretch;
+
+        p {
+            margin-right: 0.5rem;
+            margin-left: 0.5rem;
+        }
+    }
+
+    &__resume {
+        grid-area: resume;
+        color: #bb9af7;
+        font-size: 1.8rem;
+        place-self: center;
+    }
+}
