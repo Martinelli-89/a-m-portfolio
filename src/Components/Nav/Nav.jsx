@@ -10,7 +10,7 @@ const Nav = () => {
         <section className="nav">
             <img src={logo} alt="logo" className='nav__logo'></img>
             <div className='nav__buttons'>
-                <Button text={"menu"} options={["PROJECTS", "ABOUT ME", "WRITE ME"]} onClick={()=> console.log("hello")} />
+                <Button text={"menu"} options={["Projects", "About me", "Get in touch"]} onClick={()=> console.log("hello")} />
             </div>
         </section>
 

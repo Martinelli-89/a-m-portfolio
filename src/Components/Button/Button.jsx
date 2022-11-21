@@ -5,20 +5,49 @@ import MenuOption from "../MenuOption/MenuOption";
 const Button = ({text, onClick, options}) => {
 
     const [click, setClick] = useState(false);
+    const [startUnmount, setStartUnmount] = useState(false);
 
     const handleClick = () => {
-        setClick(!click);
-        onClick();
+        if(click) {
+            setStartUnmount(true)
+        } else {
+            setStartUnmount(false);
+            setClick(!click);
+            onClick();
+        }
+    }
+
+    const handleUnmount = () => {
+        if(click && startUnmount) {
+            setClick(false);
+        }
     }
 
     const menuOptions = options.map((option, index) => {
         const delay = (index+1)* 0.3;
-        return (
-            <div className="menuOption">
-                <MenuOption text={option} key={index*Math.random()} animate={click}/>
-                <div className={"menuOption__line"} style={{animationDelay:`${delay}s`}}></div>
-            </div>
-        )
+        if(index != options.length-1) {
+            return (
+                <div className="menuOption" key={index*Math.random()}>
+                    <MenuOption 
+                        text={option} 
+                        delay={delay}
+                        startedUnmount={startUnmount}
+                    />
+                </div>
+            )
+        } else {
+            return (
+                <div className="menuOption" key={index*Math.random()}>
+                    <MenuOption 
+                        text={option} 
+                        delay={delay}
+                        startedUnmount={startUnmount}
+                        handleEndAnimation={handleUnmount}
+                    />
+                </div>
+            )
+        }
+        
     })
 
     return (

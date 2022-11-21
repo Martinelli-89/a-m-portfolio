@@ -1,0 +1,78 @@
+@use "../../Styles/Fonts.scss" as *;
+
+.resume {
+    min-height: 92vh;
+    max-height: 92vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.career {
+    width: 100%;
+    min-height: 60vh;
+    max-height: 60vh;
+    display: grid;
+    grid-template-columns: 30% 20% 50%;
+    grid-template-rows: 10% 90%;
+    grid-template-areas: 
+        "dates dates dates"
+        "chart resume resume";
+    font-family: $main;
+    justify-items: center;
+
+    &__chart {
+        grid-area: chart;
+        height: 90%;
+        aspect-ratio: 1 / 1;
+        place-self: center;
+        transform: rotate(-180deg);
+    }
+
+    &__dates {
+        grid-area: dates;
+        display: flex;
+        justify-content: space-between;
+        color: #bb9af7;
+        font-size: 1rem;
+        align-self:flex-end;
+        justify-self: stretch;
+
+        p {
+            margin-right: 0.5rem;
+            margin-left: 0.3rem;
+        }
+    }
+
+    &__resume {
+        grid-area: resume;
+        color: #bb9af7;
+        display: grid;
+        grid-template-rows: 0.1fr 0.05fr 0.4fr;
+        grid-template-areas: "venue" 
+        "jobRole" "recap";
+        justify-items: center;
+    }
+
+
+    .resume__venue {
+        grid-area: venue;
+        font-size: 1.2rem;
+        align-self: flex-end;
+        color: #2ac3de
+    }
+
+    .resume__role {
+        grid-area: jobRole;
+        font-size: 0.8rem;
+    }
+
+    .resume__text {
+        grid-area: recap;
+        font-size: 1rem;
+        text-align:center;
+        width: 80%;
+        color: #cfc9c2;
+    }
+}

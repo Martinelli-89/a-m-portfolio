@@ -6,4 +6,80 @@
     padding-left: 0.4rem;
     font-family: $main;
     color: #cfc9c2;
+    position: relative;
+    z-index: -1;
+}
+
+.text--in {
+    animation: fallIn 1s forwards ease-out;
+    transform: translateX(10rem);
+}
+
+.text--out {
+    animation: fallOut 1s forwards ease-out;
+    transform: translateX(0rem);
+}
+
+.lineMenu {
+        border: 1.5px solid #bb9af7;
+        width: 102%;
+        border-radius: 5px;
+}
+
+.line--in {
+    transform: translateX(10rem);
+    animation: slideIn 1s forwards ease-out;
+}
+
+.line--out {
+    transform: translateX(0rem);
+    animation: slideOut 1s forwards ease-out;
+}
+
+@keyframes fallOut {
+    0% {
+        transform: 
+            rotateX(0deg)
+            translateY(0rem);
+    }
+    75% {
+        transform: 
+            rotateX(-90deg)
+            translateY(-2rem);
+    }
+    50% {
+        transform: 
+            rotateX(-180deg)
+            translateY(-2rem);
+    }
+    100% {
+        transform: 
+            rotateX(-180deg)
+            translateY(10rem);
+    }
+}
+
+
+@keyframes slideIn {
+    0%{
+        transform: translateX(10rem);
+    }
+    70%{
+        transform: translateX(-1rem);
+    }
+    100%{
+        transform: translateX(0rem);
+    }
+}
+
+@keyframes slideOut {
+    0%{
+        transform: translateX(0rem);
+    }
+    70%{
+        transform: translateX(-1rem);
+    }
+    100%{
+        transform: translateX(10rem);
+    }
 }

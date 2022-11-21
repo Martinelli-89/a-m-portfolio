@@ -1,0 +1,23 @@
+.sideNav {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 1rem;
+    width: 100%;
+    height: 92vh;
+
+    &__logo {
+        width: 100%;
+        aspect-ratio: 1/1;
+        margin-bottom: 1.5rem;
+    }
+    &__verticalLine {
+        width: 1px;
+        height: 5rem;
+        border: 1px solid #2ac3de;
+        margin-bottom: 1rem;
+    }
+
+}
