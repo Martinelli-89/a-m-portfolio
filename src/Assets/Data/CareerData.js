@@ -3,7 +3,7 @@ const career = {
     Arnolfini: {
         Venue : "Arnolfini Cafe Bar",
         Role: "General Manager",
-        Text : "Managing a venue in central Bristol for the Bristol Beer Factory. The venue had a turnover of £1 million and I was responsible of a team of 25 people."
+        Text : "Managing a venue in central Bristol for the Bristol Beer Factory. The venue had a yearly turnover of £1 million and I was responsible for a team of 25 people."
     },
     Architect: {
         Venue : "The Architect",
