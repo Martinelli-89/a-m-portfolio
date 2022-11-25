@@ -1,0 +1,118 @@
+@use "../../Styles/Fonts.scss" as *;
+
+.projects {
+
+    width: 100%;
+    height: 92vh;
+    display: grid;
+    grid-template-columns: 20% 70% 10%;
+    grid-template-rows: 18% 5% 1% 38% 8% 15% 5% 5% 5%;
+    grid-template-areas: 
+    "empty empty"
+    "emptyA arrows"
+    ". ."
+    "links projPreview"
+    "projName projName"
+    "projIntro projIntro"
+    "codeBuilt codeBuilt"
+    "projCode projCode"
+    "emptyZ emptyZ";
+    font-family: $main;
+
+    &__nextPrevious {
+        grid-area: arrows;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            height: 70%;
+            aspect-ratio: 1 / 1;
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+        }
+    }
+
+    &__preview {
+        grid-area: projPreview;
+        width: 100%;
+        height: 100%;
+
+        
+        img {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+        }
+    }
+
+    &__links {
+        grid-area: links;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 1.5rem;
+            aspect-ratio: 1 / 1;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+        }
+    }
+
+    &__name {
+        grid-area: projName;
+        width: 100%;
+        height: 100%;
+        color: #bb9af7;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        font-size: 2.2rem;
+        font-weight: bold;
+    }
+
+    &__description {
+        padding-left: 1rem;
+        grid-area: projIntro;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: end;
+        font-size: 0.9rem;
+        text-align: end;
+        color: #cfc9c2;
+    }
+
+    &__languages {
+        grid-area: projCode;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        img {
+            height: 80%;
+            aspect-ratio: 1 / 1;
+        }
+    }
+
+    &__buildWith {
+        grid-area: codeBuilt;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.8rem;
+        font-weight: bold;
+        text-align: end;
+        color: #bb9af7;
+    }
+
+}

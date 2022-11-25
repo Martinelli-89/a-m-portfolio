@@ -8,24 +8,35 @@ const Career = () => {
     const [venue, setVenue] = useState(career.Arnolfini.Venue);
     const [role, setRole] = useState(career.Arnolfini.Role);
     const [recap, setRecap] = useState(career.Arnolfini.Text);
+    const [arnolfini, setArnolfini] = useState(true);
+    const [architect, setArchitect] = useState(false);
+    const [gambas, setGambas] = useState(false);
 
     const ArnolfiniClick = () => {
         setVenue(career.Arnolfini.Venue);
         setRole(career.Arnolfini.Role);
         setRecap(career.Arnolfini.Text);
+        setArnolfini(true);
+        setGambas(false);
+        setArchitect(false);
     }
 
     const ArchitectClick = () => {
         setVenue(career.Architect.Venue);
         setRole(career.Architect.Role);
         setRecap(career.Architect.Text);
+        setArnolfini(false);
+        setGambas(false);
+        setArchitect(true);
     }
 
     const GambasClick = () => {
         setVenue(career.Gambas.Venue);
         setRole(career.Gambas.Role);
         setRecap(career.Gambas.Text);
-        console.log("fire");
+        setArnolfini(false);
+        setGambas(true);
+        setArchitect(false);
     }
 
     return (
@@ -34,16 +45,22 @@ const Career = () => {
             <section className="career">
                 <img src={flow} alt="git flow" className="career__chart"></img>
                 <div className="career__dates">
-                    <p onClick={ArnolfiniClick}>'17-'21</p>
-                    <p onClick={ArchitectClick}>'21-'22</p>
-                    <p onClick={GambasClick}>'22-Present</p>    
+                    <p className={arnolfini? "selected" : ""} onClick={ArnolfiniClick}>'17-'21</p>
+                    <p className={architect? "selected" : ""} onClick={ArchitectClick}>'21-'22</p>
+                    <p className={gambas? "selected" : ""} onClick={GambasClick}>'22-Present</p>    
                 </div>
-                <div className="career__resume resume">
-                    <h5 className="resume__venue">{venue}</h5>
-                    <p className="resume__role">{role}</p>
-                    <p className="resume__text">{recap}</p>
+                <div className="career__resume cv">
+                    <h5 className="cv__venue">{venue}</h5>
+                    <p className="cv__role">{role}</p>
+                    <p className="cv__text">{recap}</p>
                 </div>
             </section>
+            <div className="education">
+                <p className="education__title">Education</p>
+                <br></br>
+                <p className="education__degree">BA in Philosophy</p>
+                <p className="education__degree">GSCE in Computer Science</p>
+            </div>
         </div>
 
     )

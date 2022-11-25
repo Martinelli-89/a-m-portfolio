@@ -1,0 +1,118 @@
+@use "../../Styles/Fonts.scss" as *;
+
+
+.form {
+    height: 92vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1a1b26;
+
+    p {
+        transform: translateX(1rem);
+    }
+}
+
+.contactForm {
+
+    height: 95%;
+    width: 92%;
+    font-family: $main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 56% 40% 44% 37% / 31% 57% 34% 58% ; 
+    background-color: #bb9af7;
+
+    &__name {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        font-weight: bold;
+        
+
+        input {
+            padding:0.8rem;
+            background-color: #cfc9c2;
+            height: 2rem;
+            border: none;
+            border-radius: 25px;
+            color:#1a1b26;
+        }
+    }
+
+    &__subject {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        font-weight: bold;
+        
+
+        input {
+            padding:0.8rem;
+            background-color: #cfc9c2;
+            height: 2rem;
+            border: none;
+            border-radius: 25px;
+            color:#1a1b26;
+        }
+    }
+
+    &__email {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        font-weight: bold;
+
+        input {
+            padding:0.8rem;
+            background-color: #cfc9c2;
+            height: 2rem;
+            border: none;
+            border-radius: 25px;
+            color:#1a1b26;
+        }
+    }
+    
+
+    &__message {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        font-weight: bold;
+
+        textarea {
+            height: 13rem;
+            padding:0.8rem;
+            background-color: #cfc9c2;
+            border: none;
+            border-radius: 25px;
+            overflow-x: scroll;
+            color:#1a1b26;
+        }
+    }
+
+    &__send {
+        margin-top: 2rem;
+        width: 36%;
+        height: 2rem;
+        background-color: #414868;
+        color:#cfc9c2;
+        border-radius: 25px;
+        transform: translateX(2.25rem);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}

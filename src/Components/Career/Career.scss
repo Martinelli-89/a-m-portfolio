@@ -5,16 +5,16 @@
     max-height: 92vh;
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 .career {
     width: 100%;
-    min-height: 60vh;
-    max-height: 60vh;
+    height: 50vh;
     display: grid;
-    grid-template-columns: 30% 20% 50%;
+    grid-template-columns: 20% 30% 50%;
     grid-template-rows: 10% 90%;
     grid-template-areas: 
         "dates dates dates"
@@ -49,30 +49,64 @@
         grid-area: resume;
         color: #bb9af7;
         display: grid;
-        grid-template-rows: 0.1fr 0.05fr 0.4fr;
+        grid-template-rows: 20% 15% 65%;
         grid-template-areas: "venue" 
         "jobRole" "recap";
+        align-items: center;
         justify-items: center;
     }
 
 
-    .resume__venue {
+    .cv__venue {
         grid-area: venue;
         font-size: 1.2rem;
         align-self: flex-end;
         color: #2ac3de
     }
 
-    .resume__role {
+    .cv__role {
         grid-area: jobRole;
         font-size: 0.8rem;
     }
 
-    .resume__text {
+    .cv__text {
         grid-area: recap;
         font-size: 1rem;
-        text-align:center;
         width: 80%;
+        height: 100%;
         color: #cfc9c2;
+        place-self: center;
+        text-align: center;
     }
+}
+
+.selected {
+    color: #f7768e;
+    font-weight: bolder;
+}
+
+.education {
+    
+    width: 95%;
+    height: 8rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: $main;
+    background-color:#cfc9c2;
+    border-radius: 61% 32% 57% 30% / 52% 46% 39% 32%;
+
+    &__title {
+        color:#f7768e;
+        font-weight: bolder;
+        font-size: 1.3rem;
+    }
+
+    &__degree {
+        color: #24283b;
+        margin-bottom: 0.3rem;
+    }
+
 }
