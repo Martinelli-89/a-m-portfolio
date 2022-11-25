@@ -55,6 +55,12 @@ const Career = () => {
                     <p className="cv__text">{recap}</p>
                 </div>
             </section>
+            <div className="education">
+                <p className="education__title">Education</p>
+                <br></br>
+                <p className="education__degree">BA in Philosophy</p>
+                <p className="education__degree">GSCE in Computer Science</p>
+            </div>
         </div>
 
     )

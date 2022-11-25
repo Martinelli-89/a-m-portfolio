@@ -5,6 +5,7 @@
     max-height: 92vh;
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -82,4 +83,30 @@
 .selected {
     color: #f7768e;
     font-weight: bolder;
+}
+
+.education {
+    
+    width: 95%;
+    height: 8rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: $main;
+    background-color:#cfc9c2;
+    border-radius: 61% 32% 57% 30% / 52% 46% 39% 32%;
+
+    &__title {
+        color:#f7768e;
+        font-weight: bolder;
+        font-size: 1.3rem;
+    }
+
+    &__degree {
+        color: #24283b;
+        margin-bottom: 0.3rem;
+    }
+
 }

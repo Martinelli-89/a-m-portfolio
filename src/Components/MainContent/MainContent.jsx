@@ -2,6 +2,7 @@ import Intro from "../Intro/Intro";
 import Career from "../Career/Career";
 import Projects from "../Projects/Projects";
 import projectsData from "../../Assets/Data/ProjectsData";
+import ContactForm from "../ContactForm/ContactForm";
 
 import "./MainContent.scss";
 import { useState } from "react";
@@ -29,7 +30,6 @@ const MainContent = () => {
     return (
         <div className="mainContent">
             <Intro />
-            <Career />
             <Projects 
                 gitRepo={projectsData[projectToDisplay].repo}
                 gitLive={projectsData[projectToDisplay].link}
@@ -39,6 +39,8 @@ const MainContent = () => {
                 languages={projectsData[projectToDisplay].code}
                 updateProject={updateProject}
                 />
+            <Career />
+            <ContactForm />
         </div>
 
     )
