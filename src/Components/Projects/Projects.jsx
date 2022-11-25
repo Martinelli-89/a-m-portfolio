@@ -1,44 +1,42 @@
 import "./Projects.scss";
 import left from "../../Assets/Images/LeftArrow.svg";
 import right from "../../Assets/Images/RightArrow.svg";
-import chess from "../../Assets/Images/chess.svg";
 import git from "../../Assets/Images/blue-git.svg";
-import gitLive from "../../Assets/Images/gitLiveBlue.svg";
-import html from "../../Assets/Images/html5.svg";
-import css from "../../Assets/Images/css3.svg";
-import javascript from "../../Assets/Images/javascript.svg";
-import sass from "../../Assets/Images/sass.svg";
+import gitLiveImg from "../../Assets/Images/gitLiveBlue.svg";
 
-const Projects = () => {
+const Projects = ({gitRepo, gitLive, img, name, intro, languages, updateProject}) => {
 
 return (
 
     <section className="projects">
         <div className="projects__nextPrevious">
-            <img src={left} alt="previous project"></img>
-            <img src={right} alt="next project"></img>
+            <img src={left} alt="previous project" id="previous" onClick={updateProject}></img>
+            <img src={right} alt="next project" id="next" onClick={updateProject}></img>
         </div>
         <div className="projects__preview">
-            <img src={chess} alt="chess project preview"></img>
+            <img src={img} alt="chess project preview"></img>
         </div>
         <div className="projects__links">
+            <a href={gitRepo} target="_blank">
             <img src={git} alt="git repo link"></img>
-            <img src={gitLive} alt="git pages link"></img>
+            </a>
+            <a href={gitLive} target="_blank">
+                <img src={gitLiveImg} alt="git pages link"></img>
+            </a>
         </div>
         <div className="projects__name">
-            Chess
+            {name}
         </div>
         <div className="projects__description">
-            A game in javascript to improve our knowledge of the DOM
+            {intro}
         </div>
         <div className="projects__buildWith">
             BUILD WITH
         </div>
         <div className="projects__languages">
-            <img src={javascript} alt="git repo link"></img>
-            <img src={html} alt="git pages link"></img>
-            <img src={css} alt="git repo link"></img>
-            <img src={sass} alt="git pages link"></img>
+            {languages.map( (language, index) => {
+                return <img src={language} key={(Math.round(Math.random()*67))/Math.random()}></img>
+            })}
         </div>
     </section>
 
