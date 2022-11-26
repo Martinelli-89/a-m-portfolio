@@ -12,6 +12,7 @@
     position: relative;
     font-weight:900;
     letter-spacing: 0.15rem;
+    overflow-x: hidden;
 
 }
 
@@ -49,6 +50,7 @@
         height: 100%;
         position: relative;
         transform: rotateX(-30deg) rotateY(-20deg) rotateZ(-90deg);
+        animation: rollIn 8s 1s forwards;
 
         .face {
             position: absolute;
@@ -119,6 +121,53 @@
     100% {
         opacity: 1;
         font-size: 1.5rem;
+    }
+}
+
+@keyframes rollIn {
+    0% {
+        transform: translateX(0px) translateY(0px)
+        rotateX(-30deg) rotateY(-20deg) rotateZ(-90deg);
+    }
+    10% {
+        transform: translateX(25px) translateY(5px)
+        rotateX(-30deg) rotateY(-20deg) rotateZ(0deg);
+    }
+    20% {
+        transform: translateX(50px) translateY(10px)
+        rotateX(-30deg) rotateY(-20deg) rotateZ(90deg);
+    }
+    30% {
+        transform: translateX(75px) translateY(15px)
+        rotateX(-30deg) rotateY(-20deg) rotateZ(180deg);
+    }
+    40% {
+        transform: translateX(100px) translateY(20px)
+        rotateX(-30deg) rotateY(-20deg) rotateZ(270deg);
+    }
+    50% {
+        transform: translateX(125px) translateY(25px)
+        rotateX(-30deg) rotateY(-20deg) rotateZ(360deg);
+    }
+    60% {
+        transform: translateX(150px) translateY(30px)
+        rotateX(-30deg) rotateY(-20deg) rotateZ(450deg);
+    }
+    70% {
+        transform: translateX(175px) translateY(35px)
+        rotateX(-30deg) rotateY(-20deg) rotateZ(540deg);
+    }
+    80% {
+        transform: translateX(200px) translateY(45px)
+        rotateX(-30deg) rotateY(-20deg) rotateZ(630deg);
+    }
+    90% {
+        transform: translateX(225px) translateY(50px)
+        rotateX(-30deg) rotateY(-20deg) rotateZ(720deg);
+    }
+    100% {
+        transform: translateX(250px) translateY(55px)
+        rotateX(-30deg) rotateY(-20deg) rotateZ(810deg);
     }
 }
 

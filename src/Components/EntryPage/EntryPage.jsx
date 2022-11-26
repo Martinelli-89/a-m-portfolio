@@ -5,15 +5,15 @@ import MainPage from '../MainPage/MainPage';
 
 const EntryPage = () => {
 
-    const [mainPage, setMainPage] = useState(false);
+    const [mainPage, setMainPage] = useState(true);
 
-    useEffect(() => {
-        let timer = setTimeout(() => {
-        setMainPage(!mainPage)}, 7000);
-        return () => {
-            clearTimeout(timer);
-          };
-    },[])
+    // useEffect(() => {
+    //     let timer = setTimeout(() => {
+    //     setMainPage(!mainPage)}, 7000);
+    //     return () => {
+    //         clearTimeout(timer);
+    //       };
+    // },[])
 
     let render;
 
