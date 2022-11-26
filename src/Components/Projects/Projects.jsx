@@ -31,7 +31,7 @@ return (
             {intro}
         </div>
         <div className="projects__buildWith">
-            BUILD WITH
+            BUILT WITH
         </div>
         <div className="projects__languages">
             {languages.map( (language, index) => {
