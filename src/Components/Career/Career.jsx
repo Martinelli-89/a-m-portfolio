@@ -42,6 +42,12 @@ const Career = () => {
     return (
 
         <div className="resume">
+            <div className="education">
+                <p className="education__title">Education</p>
+                <br></br>
+                <p className="education__degree">BA in Philosophy</p>
+                <p className="education__degree">GCSE in Computer Science</p>
+            </div>
             <section className="career">
                 <img src={flow} alt="git flow" className="career__chart"></img>
                 <div className="career__dates">
@@ -55,12 +61,6 @@ const Career = () => {
                     <p className="cv__text">{recap}</p>
                 </div>
             </section>
-            <div className="education">
-                <p className="education__title">Education</p>
-                <br></br>
-                <p className="education__degree">BA in Philosophy</p>
-                <p className="education__degree">GSCE in Computer Science</p>
-            </div>
         </div>
 
     )
