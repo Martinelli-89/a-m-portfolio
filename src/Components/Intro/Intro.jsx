@@ -42,16 +42,78 @@ const Intro = () => {
                 <span className="fadeIn__char">e</span>
                 <span className="fadeIn__char">r</span>
             </div>
-            <div class="container">
-                <div class="cube">
-                    <div class="face front"></div>
-                    <div class="face back"></div>
-                    <div class="face right"></div>
-                    <div class="face left"></div>
-                    <div class="face top"></div>
-                    <div class="face bottom"></div>
+            <section className="cubes">
+                <div class="container">
+                    <div class="cube">
+                        <div class="face front">C</div>
+                        <div class="face back"></div>
+                        <div class="face right"></div>
+                        <div class="face left"></div>
+                        <div class="face top"></div>
+                        <div class="face bottom"></div>
+                    </div>
                 </div>
-            </div>
+                <div class="container cube2 ">
+                    <div class="cube">
+                        <div class="face front">O</div>
+                        <div class="face back"></div>
+                        <div class="face right"></div>
+                        <div class="face left"></div>
+                        <div class="face top"></div>
+                        <div class="face bottom"></div>
+                    </div>
+                </div>
+                <div class="container cube3">
+                    <div class="cube">
+                        <div class="face front">N</div>
+                        <div class="face back"></div>
+                        <div class="face right"></div>
+                        <div class="face left"></div>
+                        <div class="face top"></div>
+                        <div class="face bottom"></div>
+                    </div>
+                </div>
+                <div class="container cube4">
+                    <div class="cube">
+                        <div class="face front">T</div>
+                        <div class="face back"></div>
+                        <div class="face right"></div>
+                        <div class="face left"></div>
+                        <div class="face top"></div>
+                        <div class="face bottom"></div>
+                    </div>
+                </div>
+                <div class="container cube5">
+                    <div class="cube">
+                        <div class="face front">A</div>
+                        <div class="face back"></div>
+                        <div class="face right"></div>
+                        <div class="face left"></div>
+                        <div class="face top"></div>
+                        <div class="face bottom"></div>
+                    </div>
+                </div>
+                <div class="container cube6">
+                    <div class="cube">
+                        <div class="face front">C</div>
+                        <div class="face back"></div>
+                        <div class="face right"></div>
+                        <div class="face left"></div>
+                        <div class="face top"></div>
+                        <div class="face bottom"></div>
+                    </div>
+                </div>
+                <div class="container cube7">
+                    <div class="cube">
+                        <div class="face front">T</div>
+                        <div class="face back"></div>
+                        <div class="face right"></div>
+                        <div class="face left"></div>
+                        <div class="face top"></div>
+                        <div class="face bottom"></div>
+                    </div>
+                </div>
+            </section>
         </section>
 
     );
