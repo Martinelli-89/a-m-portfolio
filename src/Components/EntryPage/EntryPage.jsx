@@ -22,7 +22,7 @@ const EntryPage = () => {
             <div className='wrapper'>
                 <section className='wrapper__logo'> 
                     <Logo />
-                </section>;
+                </section>
             </div>
     } else {
         render =
