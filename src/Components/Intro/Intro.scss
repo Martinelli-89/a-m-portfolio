@@ -42,7 +42,8 @@
 .cubes {
     display: flex;
     align-self: flex-start;
-    transform: translateX(3rem);
+    transform: translateX(2rem);
+    
 }
 
 .container {
@@ -50,13 +51,15 @@
     height: 25px;
     margin-left: 5px;
     margin-right: 5px;
+    animation: hide 1s 1s forwards;
+    opacity: 0;
     
     .cube {
         transform-style: preserve-3d;
         width: 100%;
         height: 100%;
         position: relative;
-        transform: translateX(290px) translateY(110px);
+        transform: translateX(310px) translateY(130px);
         animation: rollIn 8s 1s forwards;
 
         .face {
@@ -77,16 +80,16 @@
           }
           .bottom {
             transform: rotateX(-90deg) translateZ(12.5px);
-            background-color: #ff9e64;
+            background-color: #b4f9f8;
           }
           
           .right {
             transform: rotateY(90deg) translateZ(12.5px);
-            background-color: #7aa2f7;
+            background-color: #73daca;
           }
           .left {
             transform: rotateY(-90deg) translateZ(12.5px);
-            background-color: #73daca;
+            background-color: #7aa2f7;
           }
           
           .front {
@@ -103,35 +106,43 @@
 
 .cube2 {
     transform: translateY(5px);
+    animation-delay: 0.2s;
 }
 
 .cube3 {
     transform: translateY(10px);
+    animation-delay: 0.4s;
 }
 
 .cube4 {
     transform: translateY(15px);
+    animation-delay: 0.6s;
 }
 
 .cube5 {
     transform: translateY(20px);
+    animation-delay: 0.8s;
 }
 
 .cube6 {
     transform: translateY(25px);
+    animation-delay: 1s;
 }
 
 .cube7 {
     transform: translateY(30px);
+    animation-delay: 1.2s;
 }
 
 .cube8 {
     transform: translateY(30px) translateX(90px);
+    animation-delay: 1.4s;
 
 }
 
 .cube9 {
     transform: translateY(35px) translateX(90px);
+    animation-delay: 1.6s;
 }
 
 .cube__letter {
@@ -177,7 +188,7 @@
 
 @keyframes rollIn {
     0% {
-        transform: translateX(290px) translateY(110px)
+        transform: translateX(310px) translateY(130px)
         rotateX(-30deg) rotateY(-20deg) rotateZ(810deg);
     }
     9% {
@@ -226,3 +237,11 @@
     }
 }
 
+@keyframes hide {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
