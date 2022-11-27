@@ -42,7 +42,7 @@ const Intro = () => {
             </div>
             <section className="cubes">
                 <div class="container">
-                    <div class="cube">
+                    <div class="cube" style={{animationDelay: "0s"}}>
                         <div class="face front"><h5 className="cube__letter">C</h5></div>
                         <div class="face back"></div>
                         <div class="face right"></div>
@@ -52,7 +52,7 @@ const Intro = () => {
                     </div>
                 </div>
                 <div class="container cube2 ">
-                    <div class="cube">
+                    <div class="cube" style={{animationDelay: "0.2s"}}>
                         <div class="face front"><h5 className="cube__letter">O</h5></div>
                         <div class="face back"></div>
                         <div class="face right"></div>
@@ -62,7 +62,7 @@ const Intro = () => {
                     </div>
                 </div>
                 <div class="container cube3">
-                    <div class="cube">
+                    <div class="cube" style={{animationDelay: "0.4s"}}>
                         <div class="face front"><h5 className="cube__letter">N</h5></div>
                         <div class="face back"></div>
                         <div class="face right"></div>
@@ -72,7 +72,7 @@ const Intro = () => {
                     </div>
                 </div>
                 <div class="container cube4">
-                    <div class="cube">
+                    <div class="cube" style={{animationDelay: "0.6s"}}>
                         <div class="face front"><h5 className="cube__letter">T</h5></div>
                         <div class="face back"></div>
                         <div class="face right"></div>
@@ -82,7 +82,7 @@ const Intro = () => {
                     </div>
                 </div>
                 <div class="container cube5">
-                    <div class="cube">
+                    <div class="cube" style={{animationDelay: "0.8s"}}>
                         <div class="face front"><h5 className="cube__letter">A</h5></div>
                         <div class="face back"></div>
                         <div class="face right"></div>
@@ -92,7 +92,7 @@ const Intro = () => {
                     </div>
                 </div>
                 <div class="container cube6">
-                    <div class="cube">
+                    <div class="cube" style={{animationDelay: "1s"}}>
                         <div class="face front"><h5 className="cube__letter">C</h5></div>
                         <div class="face back"></div>
                         <div class="face right"></div>
@@ -102,7 +102,7 @@ const Intro = () => {
                     </div>
                 </div>
                 <div class="container cube7">
-                    <div class="cube">
+                    <div class="cube" style={{animationDelay: "1.2s"}}>
                         <div class="face front"><h5 className="cube__letter">T</h5></div>
                         <div class="face back"></div>
                         <div class="face right"></div>
@@ -112,7 +112,7 @@ const Intro = () => {
                     </div>
                 </div>
             </section>
-            <section className="cubes">
+            <section className="cubes" style={{animationDelay: "1.4s"}}>
                 <div class="container cube8">
                     <div class="cube">
                         <div class="face front"><h5 className="cube__letter">M</h5></div>
@@ -124,7 +124,7 @@ const Intro = () => {
                     </div>
                 </div>
                 <div class="container cube9">
-                    <div class="cube">
+                    <div class="cube" style={{animationDelay: "1.6s"}}>
                         <div class="face front"><h5 className="cube__letter">E</h5></div>
                         <div class="face back"></div>
                         <div class="face right"></div>
