@@ -19,6 +19,204 @@
 .fadeIn {
     width: 100%;
     margin-bottom: 2rem;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns:  repeat(19, 1fr);
+    grid-template-areas: "one two three four five . . . . . . . . . . . . . . ."
+        "six seven eight nine ten eleven twelve fourteen fifteen x x x x x x x x x x x"
+        "sixteen seventeen eighteen nineteen twenty twentyOne twentyTwo twentyThree twentyFour twentyFive twentySix twentySeven twentyEight twentyNine thirty thirtyOne thirtyTwo thirtyThree y y";
+
+    .one {
+        grid-area: one;
+        min-width: 0;
+        min-height: 0;
+    }
+
+    .two {
+        grid-area: two;
+        min-width: 0;
+        min-height: 0;
+    }
+
+    .three {
+        grid-area: three;
+        min-width: 0;
+        min-height: 0;
+    }
+
+    .four {
+        grid-area: four;
+        min-width: 0;
+        min-height: 0;
+    }
+
+    .five {
+        grid-area: five;
+        min-width: 0;
+        min-height: 0;
+    }
+
+    .six {
+        grid-area: six;
+        min-width: 0;
+        min-height: 0;
+    }
+
+    .seven {
+        grid-area: seven;
+        min-width: 0;
+        min-height: 0;
+    }
+
+    .eight {
+        grid-area: eight;
+        min-width: 0;
+        min-height: 0;
+    }
+
+    .nine {
+        grid-area: nine;
+        min-width: 0;
+        min-height: 0;
+    }
+
+    .ten {
+        grid-area: ten;
+        min-width: 0;
+        min-height: 0;
+    }
+
+    .eleven {
+        grid-area: eleven;
+        min-width: 0;
+        min-height: 0;
+    }
+
+    .twelve {
+        grid-area: twelve;
+        min-width: 0;
+        min-height: 0;
+    }
+
+    .fourteen {
+        grid-area: fourteen;
+        min-width: 0;
+        min-height: 0;
+    }
+
+    .fifteen {
+        grid-area: fifteen;
+        min-width: 0;
+        min-height: 0;
+    }
+
+    .sixteen {
+        grid-area: sixteen;
+        min-width: 0;
+        min-height: 0;
+    }
+
+    .seventeen {
+        grid-area: seventeen;
+        min-width: 0;
+        min-height: 0;
+    }
+
+    .eighteen {
+        grid-area: eighteen;
+        min-width: 0;
+        min-height: 0;
+    }
+
+    .nineteen {
+        grid-area: nineteen;
+        min-width: 0;
+        min-height: 0;
+    }
+
+    .twenty {
+        grid-area: twenty;
+        min-width: 0;
+        min-height: 0;
+    }
+    
+    .twentyOne {
+        grid-area: twentyOne;
+        min-width: 0;
+        min-height: 0;
+    }
+
+    .twentyTwo {
+        grid-area: twentyTwo;
+        min-width: 0;
+        min-height: 0;
+    }
+
+    .twentyThree {
+        grid-area: twentyThree;
+        min-width: 0;
+        min-height: 0;
+    }
+
+    .twentyFour {
+        grid-area: twentyFour;
+        min-width: 0;
+        min-height: 0;
+    }
+
+    .twentyFive {
+        grid-area: twentyFive;
+        min-width: 0;
+        min-height: 0;
+    }
+
+    .twentySix {
+        grid-area: twentySix;
+        min-width: 0;
+        min-height: 0;
+    }
+
+    .twentySeven {
+        grid-area: twentySeven;
+        min-width: 0;
+        min-height: 0;
+    }
+
+    .twentyEight {
+        grid-area: twentyEight;
+        min-width: 0;
+        min-height: 0;
+    }
+
+    .twentyNine {
+        grid-area: twentyNine;
+        min-width: 0;
+        min-height: 0;
+    }
+
+    .thirty {
+        grid-area: thirty;
+        min-width: 0;
+        min-height: 0;
+    }
+
+    .thirtyOne {
+        grid-area: thirtyOne;
+        min-width: 0;
+        min-height: 0;
+    }
+
+    .thirtyTwo {
+        grid-area: thirtyTwo;
+        min-width: 0;
+        min-height: 0;
+    }
+
+    .thirtyThree {
+        grid-area: thirtyThree;
+        min-width: 0;
+        min-height: 0;
+    }
 
     &__char {
         color: #cfc9c2;
@@ -42,7 +240,11 @@
 .cubes {
     display: flex;
     align-self: flex-start;
-    transform: translateX(3rem);
+    transform: translateX(2rem) translateY(1rem);
+    @media only screen and (min-width: 450px) {
+        transform: translateX(3rem) translateY(1rem);
+    }
+    
 }
 
 .container {
@@ -50,14 +252,29 @@
     height: 25px;
     margin-left: 5px;
     margin-right: 5px;
+    animation: hide 1.5s forwards;
+    opacity: 0;
+    @media only screen and (min-width: 450px) {
+        width: 30px;
+        height: 30px;
+        animation: hide 3s forwards;
+    }
     
     .cube {
         transform-style: preserve-3d;
         width: 100%;
         height: 100%;
         position: relative;
-        transform: translateX(290px) translateY(110px);
+        transform: rotateX(-30deg) rotateY(-20deg) rotateZ(810deg)
+        translateX(310px) translateY(130px);
         animation: rollIn 8s 1s forwards;
+        @media only screen and (min-width: 450px) {
+            animation: rollIn450 8s 1s forwards;
+            transform: translateX(330px) translateY(130px)
+            rotateX(-30deg) rotateY(-20deg) rotateZ(810deg);
+        }
+
+
 
         .face {
             position: absolute;
@@ -74,28 +291,47 @@
           .top {
             transform: rotateX(90deg) translateZ(12.5px);
             background-color: #f7768e;
+            @media only screen and (min-width: 450px) {
+               transform: rotateX(90deg) translateZ(15px);
+            }
+            
           }
           .bottom {
             transform: rotateX(-90deg) translateZ(12.5px);
-            background-color: #ff9e64;
+            background-color: #b4f9f8;
+            @media only screen and (min-width: 450px) {
+                transform: rotateX(-90deg) translateZ(15px);
+             }
           }
           
           .right {
             transform: rotateY(90deg) translateZ(12.5px);
-            background-color: #7aa2f7;
+            background-color: #73daca;
+            @media only screen and (min-width: 450px) {
+                transform: rotateY(90deg) translateZ(15px);
+             }
           }
           .left {
             transform: rotateY(-90deg) translateZ(12.5px);
-            background-color: #73daca;
+            background-color: #7aa2f7;
+            @media only screen and (min-width: 450px) {
+                transform: rotateY(-90deg) translateZ(15px);
+             }
           }
           
           .front {
             transform: rotateX(0deg) translateZ(12.5px);
             background-color: #bb9af7;
+            @media only screen and (min-width: 450px) {
+                transform: rotateX(0deg) translateZ(15px);
+             }
           }
           .back {
             transform: rotateX(-180deg) translateZ(12.5px);
-            background-color: #cfc9c2
+            background-color: #cfc9c2;
+            @media only screen and (min-width: 450px) {
+                transform: rotateX(-180deg) translateZ(15px);
+             }
           }
       }
 
@@ -103,35 +339,43 @@
 
 .cube2 {
     transform: translateY(5px);
+    animation-delay: 0.2s;
 }
 
 .cube3 {
     transform: translateY(10px);
+    animation-delay: 0.4s;
 }
 
 .cube4 {
     transform: translateY(15px);
+    animation-delay: 0.6s;
 }
 
 .cube5 {
     transform: translateY(20px);
+    animation-delay: 0.8s;
 }
 
 .cube6 {
     transform: translateY(25px);
+    animation-delay: 1s;
 }
 
 .cube7 {
     transform: translateY(30px);
+    animation-delay: 1.2s;
 }
 
 .cube8 {
     transform: translateY(30px) translateX(90px);
+    animation-delay: 1.4s;
 
 }
 
 .cube9 {
     transform: translateY(35px) translateX(90px);
+    animation-delay: 1.6s;
 }
 
 .cube__letter {
@@ -142,7 +386,7 @@
 
 
 @for $i from 1 through 34 {
-    .fadeIn span:nth-child(#{$i}n) {
+    .fadeIn p:nth-child(#{$i}n) {
         animation-delay: #{$i* 0.07}s;
     }
 }
@@ -177,7 +421,7 @@
 
 @keyframes rollIn {
     0% {
-        transform: translateX(290px) translateY(110px)
+        transform: translateX(310px) translateY(130px)
         rotateX(-30deg) rotateY(-20deg) rotateZ(810deg);
     }
     9% {
@@ -226,3 +470,62 @@
     }
 }
 
+@keyframes hide {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes rollIn450 {
+    0% {
+        transform: translateX(330px) translateY(130px)
+        rotateX(-30deg) rotateY(-20deg) rotateZ(810deg);
+    }
+    9% {
+        transform: translateX(300px) translateY(100px)
+        rotateX(-30deg) rotateY(-20deg) rotateZ(720deg);
+    }
+    18% {
+        transform: translateX(270px) translateY(90px)
+        rotateX(-30deg) rotateY(-20deg) rotateZ(630deg);
+    }
+    27% {
+        transform: translateX(240px) translateY(80px)
+        rotateX(-30deg) rotateY(-20deg) rotateZ(540deg);
+    }
+    36% {
+        transform: translateX(210px) translateY(70px)
+        rotateX(-30deg) rotateY(-20deg) rotateZ(450deg);
+    }
+    45% {
+        transform: translateX(180px) translateY(60px)
+        rotateX(-30deg) rotateY(-20deg) rotateZ(360deg);
+    }
+    54% {
+        transform: translateX(150px) translateY(50px)
+        rotateX(-30deg) rotateY(-20deg) rotateZ(270deg);
+    }
+    63% {
+        transform: translateX(120px) translateY(40px)
+        rotateX(-30deg) rotateY(-20deg) rotateZ(180deg);
+    }
+    72% {
+        transform: translateX(90px) translateY(30px)
+        rotateX(-30deg) rotateY(-20deg) rotateZ(90deg);
+    }
+    81% {
+        transform: translateX(60px) translateY(20px)
+        rotateX(-30deg) rotateY(-20deg) rotateZ(0deg);
+    }
+    90% {
+        transform: translateX(30px) translateY(10px)
+        rotateX(-30deg) rotateY(-20deg) rotateZ(-90deg);
+    }
+    100% {
+        transform: translateX(0px) translateY(0px)
+        rotateX(-30deg) rotateY(-20deg) rotateZ(-180deg);
+    }
+}
