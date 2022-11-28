@@ -14,17 +14,17 @@
 
     &__logo {
         width: 3rem;
-        animation: slideRight 2s 1s forwards ease-out;
-        transform: translateX(-10rem);
+        //animation: slideRight 2s 1s forwards ease-out;
+        //transform: translateX(-10rem);
     }
 
     &__buttons {
         display: flex;
         justify-content: space-around;
-        transform: 
-            rotateX(-180deg)
-            translateY(10rem);
-        animation: fallIn 2s 1s forwards ease-out;
+        // transform: 
+        //     rotateX(-180deg)
+        //     translateY(10rem);
+        // animation: fallIn 2s 1s forwards ease-out;
     }
 
 }

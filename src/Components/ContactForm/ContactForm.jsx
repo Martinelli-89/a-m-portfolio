@@ -1,29 +1,55 @@
 import { useState } from "react";
 import "./ContactForm.scss";
+import {send} from 'emailjs-com';
+import SubmitButton from "../SubmitButton/SubmitButton";
 
 const ContactForm = () => {
 
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [subject, setSubject] = useState("");
-    const [message, setMessage] = useState("");
+    const [message, setMessage] = useState({
+        from_name:'',
+        from_email:'',
+        subject:'',
+        message:''
+    });
+
+    const [submit, setSubmit] = useState("Submit");
 
     const handleInput = (e) => {
 
         switch(e.target.id) {
-            case("name"):
-                setName(e.target.value);
+            case("from_name"):
+                setMessage({...message, [e.target.id] : e.target.value});
                 break;
-            case("email"):
-                setEmail(e.target.value);
+            case("from_email"):
+                setMessage({...message, [e.target.id] : e.target.value});
                 break;
             case("subject"):
-                setSubject(e.target.value);
+                setMessage({...message, [e.target.id] : e.target.value});
                 break;
             case("message"):
-                setMessage(e.target.value);
+                setMessage({...message, [e.target.id] : e.target.value});
                 break;
         }
+
+    }
+
+    const handleSubmit = (e) => {
+
+        e.preventDefault();
+
+        setSubmit("Loading");
+        send(
+            'service_pt5ej5p',
+            'template_rk5youl',
+            message,
+            'JwW88Wb-5p-mC5ew9'
+          )
+            .then((response) => {
+              setSubmit("Sent")
+            })
+            .catch((err) => {
+              setSubmit("Error");
+            });
 
     }
 
@@ -33,11 +59,11 @@ const ContactForm = () => {
             <div className="contactForm">
                 <div className="contactForm__name">
                     <p>Name</p>
-                    <input id="name" onChange={handleInput}></input>
+                    <input id="from_name" onChange={handleInput}></input>
                 </div>
                 <div className="contactForm__email">
                     <p>Email</p>
-                    <input id="email" onChange={handleInput}></input>
+                    <input id="from_email" onChange={handleInput}></input>
                 </div>
                 <div className="contactForm__subject">
                     <p>Subject</p>
@@ -47,7 +73,7 @@ const ContactForm = () => {
                     <p>Message</p>
                     <textarea id="message" onChange={handleInput}></textarea>
                 </div>
-                <div className="contactForm__send">Send</div>
+                <SubmitButton text={submit} handleSubmit={handleSubmit}/>
             </div>
         </section>
 

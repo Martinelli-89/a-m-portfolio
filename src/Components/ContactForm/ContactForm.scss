@@ -97,20 +97,6 @@
             color:#1a1b26;
         }
     }
-
-    &__send {
-        margin-top: 2rem;
-        width: 36%;
-        height: 2rem;
-        background-color: #414868;
-        color:#cfc9c2;
-        border-radius: 25px;
-        transform: translateX(2.25rem);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-    }
 }
 
 textarea:focus, input:focus{
