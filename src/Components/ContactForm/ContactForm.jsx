@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./ContactForm.scss";
 import {send} from 'emailjs-com';
+import SubmitButton from "../SubmitButton/SubmitButton";
 
 const ContactForm = () => {
 
@@ -47,7 +48,7 @@ const ContactForm = () => {
               setSubmit("Sent")
             })
             .catch((err) => {
-              setSubmit("Error. Try again");
+              setSubmit("Error");
             });
 
     }
@@ -72,7 +73,7 @@ const ContactForm = () => {
                     <p>Message</p>
                     <textarea id="message" onChange={handleInput}></textarea>
                 </div>
-                <div className="contactForm__send" onClick={handleSubmit}>{submit}</div>
+                <SubmitButton text={submit} handleSubmit={handleSubmit}/>
             </div>
         </section>
 
