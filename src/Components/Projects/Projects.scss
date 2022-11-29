@@ -18,7 +18,7 @@
     "projCode projCode"
     "emptyZ emptyZ";
     font-family: $main;
-    @media only screen and (min-height: 800px) and (min-width: 400px) {
+    @media only screen and (min-height: 800px) and (min-width: 390px) {
         grid-template-rows: 18% 5% 1% 32% 8% 15% 8% 6.5% 6.5%;
      }
 
@@ -92,7 +92,7 @@
         font-size: 0.9rem;
         text-align: end;
         color: #cfc9c2;
-        @media only screen and (min-height: 800px) and (min-width: 400px) {
+        @media only screen and (min-height: 800px) and (min-width: 390px) {
             font-size: 1.1rem;
          }
     }
@@ -123,7 +123,7 @@
         font-weight: bold;
         text-align: end;
         color: #bb9af7;
-        @media only screen and (min-height: 800px) and (min-width: 400px) {
+        @media only screen and (min-height: 800px) and (min-width: 390px) {
             font-size: 1rem;
          }
     }
