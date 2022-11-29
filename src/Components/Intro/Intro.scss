@@ -43,6 +43,14 @@
         width: 78%;
         grid-gap:1.5rem;
     }
+    @media only screen and (min-width: 1500px) {
+        width: 65%;
+        grid-gap:2rem;
+    }
+    @media only screen and (min-width: 1700px) {
+        width: 55%;
+        margin-bottom: 1.5rem;
+    }
 
     .one {
         grid-area: one;
