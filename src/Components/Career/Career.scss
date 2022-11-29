@@ -38,6 +38,9 @@
         font-size: 1rem;
         align-self:flex-end;
         justify-self: stretch;
+        @media only screen and (min-height: 800px) and (min-width: 400px) {
+            font-size: 1.1rem;
+         }
 
         p {
             margin-right: 0.5rem;
@@ -61,12 +64,18 @@
         grid-area: venue;
         font-size: 1.2rem;
         align-self: flex-end;
-        color: #2ac3de
+        color: #2ac3de;
+        @media only screen and (min-height: 800px) and (min-width: 400px) {
+            font-size: 1.3rem;
+         }
     }
 
     .cv__role {
         grid-area: jobRole;
         font-size: 0.8rem;
+        @media only screen and (min-height: 800px) and (min-width: 400px) {
+            font-size: 1rem;
+         }
     }
 
     .cv__text {
@@ -77,6 +86,9 @@
         color: #cfc9c2;
         place-self: center;
         text-align: center;
+        @media only screen and (min-height: 800px) and (min-width: 400px) {
+            font-size: 1.1rem;
+         }
     }
 }
 

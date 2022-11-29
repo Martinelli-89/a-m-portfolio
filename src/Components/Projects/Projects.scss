@@ -18,6 +18,9 @@
     "projCode projCode"
     "emptyZ emptyZ";
     font-family: $main;
+    @media only screen and (min-height: 800px) and (min-width: 400px) {
+        grid-template-rows: 18% 5% 1% 32% 8% 15% 8% 6.5% 6.5%;
+     }
 
     &__nextPrevious {
         grid-area: arrows;
@@ -39,6 +42,9 @@
         grid-area: projPreview;
         width: 100%;
         height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         
         img {
@@ -86,6 +92,9 @@
         font-size: 0.9rem;
         text-align: end;
         color: #cfc9c2;
+        @media only screen and (min-height: 800px) and (min-width: 400px) {
+            font-size: 1.1rem;
+         }
     }
 
     &__languages {
@@ -95,6 +104,7 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
+        flex-wrap: wrap;
 
         img {
             height: 80%;
@@ -113,6 +123,9 @@
         font-weight: bold;
         text-align: end;
         color: #bb9af7;
+        @media only screen and (min-height: 800px) and (min-width: 400px) {
+            font-size: 1rem;
+         }
     }
 
 }
