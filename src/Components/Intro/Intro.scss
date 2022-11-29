@@ -16,6 +16,13 @@
 
 }
 
+.contactMe {
+    @media only screen and (min-width: 500px) {
+        align-self: flex-end;
+        transform: translateX(-50px);
+     }
+}
+
 .fadeIn {
     width: 100%;
     margin-bottom: 2rem;
@@ -25,6 +32,10 @@
     grid-template-areas: "one two three four five . . . . . . . . . . . . . . ."
         "six seven eight nine ten eleven twelve fourteen fifteen x x x x x x x x x x x"
         "sixteen seventeen eighteen nineteen twenty twentyOne twentyTwo twentyThree twentyFour twentyFive twentySix twentySeven twentyEight twentyNine thirty thirtyOne thirtyTwo thirtyThree y y";
+    @media only screen and (min-width: 700px) {
+        width: 85%;
+        grid-gap:0.5rem;
+    }
 
     .one {
         grid-area: one;
@@ -227,6 +238,9 @@
         @media only screen and (min-height: 800px) and (min-width: 390px) {
             animation: fadeInHeight800 0.3s forwards ease-out;
          }
+        @media only screen and (min-width: 500px) {
+            animation: fadeInWidth500 0.3s forwards ease-out;
+         }
     }
 
     &__name {
@@ -238,6 +252,9 @@
         max-height: 2.5rem;
         @media only screen and (min-height: 800px) and (min-width: 390px) {
             animation: fadeInHeight800 0.3s forwards ease-out;
+         }
+        @media only screen and (min-width: 500px) {
+            animation: fadeInWidth500 0.3s forwards ease-out;
          }
     }
 
@@ -257,6 +274,10 @@
     margin-right: 5px;
     animation: hide 1.5s forwards;
     opacity: 0;
+    @media only screen and (min-width: 700px) {
+        width: 40px;
+        height: 40px;
+    }
     
     .cube {
         transform-style: preserve-3d;
@@ -267,9 +288,6 @@
         transform: translateX(330px) translateY(130px)
         rotateX(-30deg) rotateY(-20deg) rotateZ(810deg);
 
-
-
-
         .face {
             position: absolute;
             width: 100%;
@@ -279,39 +297,59 @@
             align-items: center;
             font-weight: bold;
             font-size: 1rem;
-
+            @media only screen and (min-width: 700px) {
+                font-size: 1.5rem;
+            }
           }
 
           .top {
             background-color: #f7768e;
             transform: rotateX(90deg) translateZ(15px);
+            @media only screen and (min-width: 700px) {
+                transform: rotateX(90deg) translateZ(20px);
+            }
+            
 
             
           }
           .bottom {
             background-color: #b4f9f8;
             transform: rotateX(-90deg) translateZ(15px);
-
+            @media only screen and (min-width: 700px) {
+                transform: rotateX(-90deg) translateZ(20px);
+            }
           }
           
           .right {
             background-color: #73daca;
             transform: rotateY(90deg) translateZ(15px);
+            @media only screen and (min-width: 700px) {
+                transform: rotateY(90deg) translateZ(20px);
+            }
 
           }
           .left {
             background-color: #7aa2f7;
             transform: rotateY(-90deg) translateZ(15px);
+            @media only screen and (min-width: 700px) {
+                transform: rotateY(-90deg) translateZ(20px);
+            }
 
           }
           
           .front {
             background-color: #bb9af7;
             transform: rotateX(0deg) translateZ(15px);
+            @media only screen and (min-width: 700px) {
+                transform: rotateX(0deg) translateZ(20px);
+            }
           }
           .back {
             background-color: #cfc9c2;
             transform: rotateX(-180deg) translateZ(15px);
+            @media only screen and (min-width: 700px) {
+                transform: rotateX(-180deg) translateZ(20px);
+            }
           }
       }
 
@@ -320,42 +358,66 @@
 .cube2 {
     transform: translateY(5px);
     animation-delay: 0.2s;
+    @media only screen and (min-width: 700px) {
+        transform: translateY(9px);
+    }
 }
 
 .cube3 {
     transform: translateY(10px);
     animation-delay: 0.4s;
+    @media only screen and (min-width: 700px) {
+        transform: translateY(18px);
+    }
 }
 
 .cube4 {
     transform: translateY(15px);
     animation-delay: 0.6s;
+    @media only screen and (min-width: 700px) {
+        transform: translateY(27px);
+    }
 }
 
 .cube5 {
     transform: translateY(20px);
     animation-delay: 0.8s;
+    @media only screen and (min-width: 700px) {
+        transform: translateY(36px);
+    }
 }
 
 .cube6 {
     transform: translateY(25px);
     animation-delay: 1s;
+    @media only screen and (min-width: 700px) {
+        transform: translateY(45px);
+    }
 }
 
 .cube7 {
     transform: translateY(30px);
     animation-delay: 1.2s;
+    @media only screen and (min-width: 700px) {
+        transform: translateY(54px);
+    }
 }
 
 .cube8 {
     transform: translateY(30px) translateX(90px);
     animation-delay: 1.4s;
+    @media only screen and (min-width: 700px) {
+        transform: translateX(120px) translateY(63px);
+    }
 
 }
 
 .cube9 {
     transform: translateY(35px) translateX(90px);
     animation-delay: 1.6s;
+    @media only screen and (min-width: 700px) {
+        transform: translateX(120px) translateY(72px);
+    }
 }
 
 .cube__letter {
@@ -489,5 +551,34 @@
     100% {
         opacity: 1;
         font-size: 1.8rem;
+    }
+}
+
+@-webkit-keyframes fadeInWidth500 {
+    0% {
+        opacity: 0;
+        font-size: 0.8rem;
+    }
+    70% {
+        font-size: 3.4rem;
+    }
+    100% {
+        opacity: 1;
+        font-size: 2.2rem;
+        
+    }
+}
+
+@keyframes fadeInWidth500 {
+    0% {
+        opacity: 0;
+        font-size: 0.8rem;
+    }
+    70% {
+        font-size: 3.4rem;
+    }
+    100% {
+        opacity: 1;
+        font-size: 2.2rem;
     }
 }

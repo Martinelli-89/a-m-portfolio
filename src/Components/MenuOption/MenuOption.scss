@@ -24,6 +24,9 @@
         border: 1.5px solid #bb9af7;
         width: 102%;
         border-radius: 5px;
+        @media only screen and (min-width: 700px) {
+            margin-bottom: 0.6rem;
+        }
 }
 
 .line--in {

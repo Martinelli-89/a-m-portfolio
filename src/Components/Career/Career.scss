@@ -21,6 +21,12 @@
         "chart resume resume";
     font-family: $main;
     justify-items: center;
+    @media only screen and (min-width: 480px) {
+        width: 80%;
+    }
+    @media only screen and (min-width: 700px) {
+        width: 70%;
+    }
 
     &__chart {
         grid-area: chart;
@@ -41,6 +47,9 @@
         @media only screen and (min-height: 800px) and (min-width: 390px) {
             font-size: 1.1rem;
          }
+         @media only screen and (min-width: 700px) {
+            font-size: 1.3rem;
+        }
 
         p {
             margin-right: 0.5rem;
@@ -68,6 +77,9 @@
         @media only screen and (min-height: 800px) and (min-width: 300px) {
             font-size: 1.3rem;
          }
+         @media only screen and (min-width: 700px) {
+            font-size: 1.7rem;
+        }
     }
 
     .cv__role {
@@ -76,6 +88,9 @@
         @media only screen and (min-height: 800px) and (min-width: 390px) {
             font-size: 1rem;
          }
+         @media only screen and (min-width: 700px) {
+            font-size: 1.3rem;
+        }
     }
 
     .cv__text {
@@ -89,6 +104,9 @@
         @media only screen and (min-height: 800px) and (min-width: 390px) {
             font-size: 1.1rem;
          }
+         @media only screen and (min-width: 700px) {
+            font-size: 1.4rem;
+        }
     }
 }
 
@@ -109,16 +127,34 @@
     font-family: $main;
     background-color:#cfc9c2;
     border-radius: 61% 32% 57% 30% / 52% 46% 39% 32%;
+    @media only screen and (min-width: 480px) {
+        width: 80%;
+    }
+    @media only screen and (min-width: 700px) {
+        width: 70%;
+    }
 
     &__title {
         color:#f7768e;
         font-weight: bolder;
         font-size: 1.3rem;
+        @media only screen and (min-width: 480px) {
+            font-size: 1.5rem;
+        }
+        @media only screen and (min-width: 700px) {
+            font-size: 1.7rem;
+        }
     }
 
     &__degree {
         color: #24283b;
         margin-bottom: 0.3rem;
+        @media only screen and (min-width: 480px) {
+            font-size: 1.1rem;
+        }
+        @media only screen and (min-width: 700px) {
+            font-size: 1.3rem;
+        }
     }
 
 }
