@@ -16,6 +16,13 @@
 
 }
 
+.contactMe {
+    @media only screen and (min-width: 500px) {
+        align-self: flex-end;
+        transform: translateX(-50px);
+     }
+}
+
 .fadeIn {
     width: 100%;
     margin-bottom: 2rem;
@@ -25,6 +32,10 @@
     grid-template-areas: "one two three four five . . . . . . . . . . . . . . ."
         "six seven eight nine ten eleven twelve fourteen fifteen x x x x x x x x x x x"
         "sixteen seventeen eighteen nineteen twenty twentyOne twentyTwo twentyThree twentyFour twentyFive twentySix twentySeven twentyEight twentyNine thirty thirtyOne thirtyTwo thirtyThree y y";
+    @media only screen and (min-width: 700px) {
+        width: 85%;
+        grid-gap:0.5rem;
+    }
 
     .one {
         grid-area: one;
@@ -224,6 +235,12 @@
         opacity: 0;
         min-height: 2.5rem;
         max-height: 2.5rem;
+        @media only screen and (min-height: 800px) and (min-width: 390px) {
+            animation: fadeInHeight800 0.3s forwards ease-out;
+         }
+        @media only screen and (min-width: 500px) {
+            animation: fadeInWidth500 0.3s forwards ease-out;
+         }
     }
 
     &__name {
@@ -233,6 +250,12 @@
         opacity: 0;
         min-height: 2.5rem;
         max-height: 2.5rem;
+        @media only screen and (min-height: 800px) and (min-width: 390px) {
+            animation: fadeInHeight800 0.3s forwards ease-out;
+         }
+        @media only screen and (min-width: 500px) {
+            animation: fadeInWidth500 0.3s forwards ease-out;
+         }
     }
 
 }
@@ -240,24 +263,20 @@
 .cubes {
     display: flex;
     align-self: flex-start;
-    transform: translateX(2rem) translateY(1rem);
-    @media only screen and (min-width: 450px) {
-        transform: translateX(3rem) translateY(1rem);
-    }
+    transform: translateX(3rem) translateY(1rem);
     
 }
 
 .container {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     margin-left: 5px;
     margin-right: 5px;
     animation: hide 1.5s forwards;
     opacity: 0;
-    @media only screen and (min-width: 450px) {
-        width: 30px;
-        height: 30px;
-        animation: hide 3s forwards;
+    @media only screen and (min-width: 700px) {
+        width: 40px;
+        height: 40px;
     }
     
     .cube {
@@ -265,16 +284,9 @@
         width: 100%;
         height: 100%;
         position: relative;
-        transform: rotateX(-30deg) rotateY(-20deg) rotateZ(810deg)
-        translateX(310px) translateY(130px);
         animation: rollIn 8s 1s forwards;
-        @media only screen and (min-width: 450px) {
-            animation: rollIn450 8s 1s forwards;
-            transform: translateX(330px) translateY(130px)
-            rotateX(-30deg) rotateY(-20deg) rotateZ(810deg);
-        }
-
-
+        transform: translateX(330px) translateY(130px)
+        rotateX(-30deg) rotateY(-20deg) rotateZ(810deg);
 
         .face {
             position: absolute;
@@ -285,53 +297,59 @@
             align-items: center;
             font-weight: bold;
             font-size: 1rem;
-
+            @media only screen and (min-width: 700px) {
+                font-size: 1.5rem;
+            }
           }
 
           .top {
-            transform: rotateX(90deg) translateZ(12.5px);
             background-color: #f7768e;
-            @media only screen and (min-width: 450px) {
-               transform: rotateX(90deg) translateZ(15px);
+            transform: rotateX(90deg) translateZ(15px);
+            @media only screen and (min-width: 700px) {
+                transform: rotateX(90deg) translateZ(20px);
             }
+            
+
             
           }
           .bottom {
-            transform: rotateX(-90deg) translateZ(12.5px);
             background-color: #b4f9f8;
-            @media only screen and (min-width: 450px) {
-                transform: rotateX(-90deg) translateZ(15px);
-             }
+            transform: rotateX(-90deg) translateZ(15px);
+            @media only screen and (min-width: 700px) {
+                transform: rotateX(-90deg) translateZ(20px);
+            }
           }
           
           .right {
-            transform: rotateY(90deg) translateZ(12.5px);
             background-color: #73daca;
-            @media only screen and (min-width: 450px) {
-                transform: rotateY(90deg) translateZ(15px);
-             }
+            transform: rotateY(90deg) translateZ(15px);
+            @media only screen and (min-width: 700px) {
+                transform: rotateY(90deg) translateZ(20px);
+            }
+
           }
           .left {
-            transform: rotateY(-90deg) translateZ(12.5px);
             background-color: #7aa2f7;
-            @media only screen and (min-width: 450px) {
-                transform: rotateY(-90deg) translateZ(15px);
-             }
+            transform: rotateY(-90deg) translateZ(15px);
+            @media only screen and (min-width: 700px) {
+                transform: rotateY(-90deg) translateZ(20px);
+            }
+
           }
           
           .front {
-            transform: rotateX(0deg) translateZ(12.5px);
             background-color: #bb9af7;
-            @media only screen and (min-width: 450px) {
-                transform: rotateX(0deg) translateZ(15px);
-             }
+            transform: rotateX(0deg) translateZ(15px);
+            @media only screen and (min-width: 700px) {
+                transform: rotateX(0deg) translateZ(20px);
+            }
           }
           .back {
-            transform: rotateX(-180deg) translateZ(12.5px);
             background-color: #cfc9c2;
-            @media only screen and (min-width: 450px) {
-                transform: rotateX(-180deg) translateZ(15px);
-             }
+            transform: rotateX(-180deg) translateZ(15px);
+            @media only screen and (min-width: 700px) {
+                transform: rotateX(-180deg) translateZ(20px);
+            }
           }
       }
 
@@ -340,42 +358,66 @@
 .cube2 {
     transform: translateY(5px);
     animation-delay: 0.2s;
+    @media only screen and (min-width: 700px) {
+        transform: translateY(9px);
+    }
 }
 
 .cube3 {
     transform: translateY(10px);
     animation-delay: 0.4s;
+    @media only screen and (min-width: 700px) {
+        transform: translateY(18px);
+    }
 }
 
 .cube4 {
     transform: translateY(15px);
     animation-delay: 0.6s;
+    @media only screen and (min-width: 700px) {
+        transform: translateY(27px);
+    }
 }
 
 .cube5 {
     transform: translateY(20px);
     animation-delay: 0.8s;
+    @media only screen and (min-width: 700px) {
+        transform: translateY(36px);
+    }
 }
 
 .cube6 {
     transform: translateY(25px);
     animation-delay: 1s;
+    @media only screen and (min-width: 700px) {
+        transform: translateY(45px);
+    }
 }
 
 .cube7 {
     transform: translateY(30px);
     animation-delay: 1.2s;
+    @media only screen and (min-width: 700px) {
+        transform: translateY(54px);
+    }
 }
 
 .cube8 {
     transform: translateY(30px) translateX(90px);
     animation-delay: 1.4s;
+    @media only screen and (min-width: 700px) {
+        transform: translateX(120px) translateY(63px);
+    }
 
 }
 
 .cube9 {
     transform: translateY(35px) translateX(90px);
     animation-delay: 1.6s;
+    @media only screen and (min-width: 700px) {
+        transform: translateX(120px) translateY(72px);
+    }
 }
 
 .cube__letter {
@@ -394,79 +436,32 @@
 @-webkit-keyframes fadeIn {
     0% {
         opacity: 0;
-        font-size: 1.2rem;
+        font-size: 0.8rem;
     }
-    70% {
+    50% {
         font-size: 2.3rem;
+    }
+    85% {
+        font-size:  1.2rem;
     }
     100% {
         opacity: 1;
         font-size: 1.5rem;
+        
     }
 }
 
 @keyframes fadeIn {
     0% {
         opacity: 0;
-        font-size: 1.2rem;
+        font-size: 0.8rem;
     }
-    70% {
+    50% {
         font-size: 2.3rem;
     }
     100% {
         opacity: 1;
         font-size: 1.5rem;
-    }
-}
-
-@keyframes rollIn {
-    0% {
-        transform: translateX(310px) translateY(130px)
-        rotateX(-30deg) rotateY(-20deg) rotateZ(810deg);
-    }
-    9% {
-        transform: translateX(250px) translateY(100px)
-        rotateX(-30deg) rotateY(-20deg) rotateZ(720deg);
-    }
-    18% {
-        transform: translateX(225px) translateY(90px)
-        rotateX(-30deg) rotateY(-20deg) rotateZ(630deg);
-    }
-    27% {
-        transform: translateX(200px) translateY(80px)
-        rotateX(-30deg) rotateY(-20deg) rotateZ(540deg);
-    }
-    36% {
-        transform: translateX(175px) translateY(70px)
-        rotateX(-30deg) rotateY(-20deg) rotateZ(450deg);
-    }
-    45% {
-        transform: translateX(150px) translateY(60px)
-        rotateX(-30deg) rotateY(-20deg) rotateZ(360deg);
-    }
-    54% {
-        transform: translateX(125px) translateY(50px)
-        rotateX(-30deg) rotateY(-20deg) rotateZ(270deg);
-    }
-    63% {
-        transform: translateX(100px) translateY(40px)
-        rotateX(-30deg) rotateY(-20deg) rotateZ(180deg);
-    }
-    72% {
-        transform: translateX(75px) translateY(30px)
-        rotateX(-30deg) rotateY(-20deg) rotateZ(90deg);
-    }
-    81% {
-        transform: translateX(50px) translateY(20px)
-        rotateX(-30deg) rotateY(-20deg) rotateZ(0deg);
-    }
-    90% {
-        transform: translateX(25px) translateY(10px)
-        rotateX(-30deg) rotateY(-20deg) rotateZ(-90deg);
-    }
-    100% {
-        transform: translateX(0px) translateY(0px)
-        rotateX(-30deg) rotateY(-20deg) rotateZ(-180deg);
     }
 }
 
@@ -479,53 +474,111 @@
     }
 }
 
-@keyframes rollIn450 {
+@keyframes rollIn {
     0% {
         transform: translateX(330px) translateY(130px)
         rotateX(-30deg) rotateY(-20deg) rotateZ(810deg);
     }
     9% {
-        transform: translateX(300px) translateY(100px)
+        transform: translateX(270px) translateY(90px)
         rotateX(-30deg) rotateY(-20deg) rotateZ(720deg);
     }
     18% {
-        transform: translateX(270px) translateY(90px)
+        transform: translateX(240px) translateY(80px)
         rotateX(-30deg) rotateY(-20deg) rotateZ(630deg);
     }
     27% {
-        transform: translateX(240px) translateY(80px)
+        transform: translateX(210px) translateY(70px)
         rotateX(-30deg) rotateY(-20deg) rotateZ(540deg);
     }
     36% {
-        transform: translateX(210px) translateY(70px)
+        transform: translateX(180px) translateY(60px)
         rotateX(-30deg) rotateY(-20deg) rotateZ(450deg);
     }
     45% {
-        transform: translateX(180px) translateY(60px)
+        transform: translateX(150px) translateY(50px)
         rotateX(-30deg) rotateY(-20deg) rotateZ(360deg);
     }
     54% {
-        transform: translateX(150px) translateY(50px)
+        transform: translateX(120px) translateY(40px)
         rotateX(-30deg) rotateY(-20deg) rotateZ(270deg);
     }
     63% {
-        transform: translateX(120px) translateY(40px)
+        transform: translateX(90px) translateY(30px)
         rotateX(-30deg) rotateY(-20deg) rotateZ(180deg);
     }
     72% {
-        transform: translateX(90px) translateY(30px)
+        transform: translateX(60px) translateY(20px)
         rotateX(-30deg) rotateY(-20deg) rotateZ(90deg);
     }
     81% {
-        transform: translateX(60px) translateY(20px)
+        transform: translateX(30px) translateY(10px)
         rotateX(-30deg) rotateY(-20deg) rotateZ(0deg);
     }
     90% {
-        transform: translateX(30px) translateY(10px)
+        transform: translateX(0px) translateY(0px)
         rotateX(-30deg) rotateY(-20deg) rotateZ(-90deg);
     }
     100% {
-        transform: translateX(0px) translateY(0px)
+        transform: translateX(-30px) translateY(-10px)
         rotateX(-30deg) rotateY(-20deg) rotateZ(-180deg);
+    }
+}
+
+ @-webkit-keyframes fadeInHeight800 {
+    0% {
+        opacity: 0;
+        font-size: 0.8rem;
+    }
+    50% {
+        font-size: 2.3rem;
+    }
+    100% {
+        opacity: 1;
+        font-size: 1.8rem;
+        
+    }
+}
+
+@keyframes fadeInHeight800 {
+    0% {
+        opacity: 0;
+        font-size: 0.8rem;
+    }
+    50% {
+        font-size: 2.3rem;
+    }
+    100% {
+        opacity: 1;
+        font-size: 1.8rem;
+    }
+}
+
+@-webkit-keyframes fadeInWidth500 {
+    0% {
+        opacity: 0;
+        font-size: 0.8rem;
+    }
+    70% {
+        font-size: 3.4rem;
+    }
+    100% {
+        opacity: 1;
+        font-size: 2.2rem;
+        
+    }
+}
+
+@keyframes fadeInWidth500 {
+    0% {
+        opacity: 0;
+        font-size: 0.8rem;
+    }
+    70% {
+        font-size: 3.4rem;
+    }
+    100% {
+        opacity: 1;
+        font-size: 2.2rem;
     }
 }

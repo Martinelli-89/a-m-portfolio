@@ -14,31 +14,16 @@
 
     &__logo {
         width: 3rem;
-        //animation: slideRight 2s 1s forwards ease-out;
-        //transform: translateX(-10rem);
+        @media only screen and (min-width: 700px) {
+            width: 4rem;
+        }
     }
 
     &__buttons {
         display: flex;
         justify-content: space-around;
-        // transform: 
-        //     rotateX(-180deg)
-        //     translateY(10rem);
-        // animation: fallIn 2s 1s forwards ease-out;
     }
 
-}
-
-@keyframes slideRight {
-    0% {
-        transform: translateX(-10rem);
-    }
-    70% {
-        transform: translateX(2rem);
-    }
-    100% {
-        transform: translateX(0rem);
-    }
 }
 
 @keyframes fallIn {

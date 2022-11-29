@@ -9,7 +9,7 @@ const EntryPage = () => {
 
     useEffect(() => {
         let timer = setTimeout(() => {
-        setMainPage(!mainPage)}, 7000);
+        setMainPage(!mainPage)}, 7500);
         return () => {
             clearTimeout(timer);
           };

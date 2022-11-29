@@ -16,7 +16,7 @@
 
 .contactForm {
 
-    height: 95%;
+    height: 90%;
     width: 92%;
     font-family: $main;
     display: flex;
@@ -25,14 +25,25 @@
     flex-direction: column;
     border-radius: 56% 40% 44% 37% / 31% 57% 34% 58% ; 
     background-color: #bb9af7;
+    @media only screen and (min-height: 800px) and (min-width: 390px) {
+        height: 80%;
+        width: 85%;
+     }
+    @media only screen and (min-width: 480px) {
+        height: 85%;
+        width: 70%;
+    }
 
     &__name {
         width: 70%;
         display: flex;
         flex-direction: column;
-        margin-top: 1rem;
+        margin-top: 0.5rem;
         font-weight: bold;
-        
+        @media only screen and (min-height: 550px) {
+            margin-top: 1rem;
+            width: 65%;
+        }
 
         input {
             padding:0.8rem;
@@ -48,8 +59,15 @@
         width: 70%;
         display: flex;
         flex-direction: column;
-        margin-top: 1rem;
+        margin-top: 0.5rem;
         font-weight: bold;
+        @media only screen and (min-height: 550px) {
+            margin-top: 1rem;
+        }
+        @media only screen and (min-width: 700px) {
+            margin-top: 1.5rem;
+            width: 65%;
+        }
         
 
         input {
@@ -66,8 +84,15 @@
         width: 70%;
         display: flex;
         flex-direction: column;
-        margin-top: 1rem;
+        margin-top: 0.5rem;
         font-weight: bold;
+        @media only screen and (min-height: 550px) {
+            margin-top: 1rem;
+        }
+        @media only screen and (min-width: 700px) {
+            margin-top: 1.5rem;
+            width: 65%;
+        }
 
         input {
             padding:0.8rem;
@@ -84,8 +109,15 @@
         width: 70%;
         display: flex;
         flex-direction: column;
-        margin-top: 1rem;
+        margin-top: 0.5rem;
         font-weight: bold;
+        @media only screen and (min-height: 550px) {
+            margin-top: 1rem;
+        }
+        @media only screen and (min-width: 700px) {
+            margin-top: 1.5rem;
+            width: 65%;
+        }
 
         textarea {
             height: 13rem;
@@ -95,6 +127,13 @@
             border-radius: 25px;
             overflow-x: scroll;
             color:#1a1b26;
+            @media only screen and (min-height: 800px) and (min-width: 390px) {
+                height: 15rem;
+             }
+             @media only screen and (min-width: 700px) {
+                height: 20rem;
+            }
+
         }
     }
 }
