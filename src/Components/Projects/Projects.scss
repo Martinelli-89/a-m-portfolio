@@ -29,6 +29,11 @@
         width: 90%;
         grid-template-rows: 12% 5% 1% 32% 8% 15% 8% 9.5% 9.5%;
     }
+    @media only screen and (min-width: 1000px) {
+        width: 80%;
+        grid-template-columns: 40% 45% 15%;
+    }
+    
 
     &__nextPrevious {
         grid-area: arrows;

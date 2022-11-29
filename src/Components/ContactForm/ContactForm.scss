@@ -33,6 +33,10 @@
         height: 85%;
         width: 70%;
     }
+    @media only screen and (min-width: 1000px) {
+        height: 85%;
+        width: 60%;
+    }
 
     &__name {
         width: 70%;
@@ -43,6 +47,9 @@
         @media only screen and (min-height: 550px) {
             margin-top: 1rem;
             width: 65%;
+        }
+        @media only screen and (min-width: 480px) {
+            font-size: 1.4rem;
         }
 
         input {
@@ -67,6 +74,9 @@
         @media only screen and (min-width: 700px) {
             margin-top: 1.5rem;
             width: 65%;
+        }
+        @media only screen and (min-width: 480px) {
+            font-size: 1.4rem;
         }
         
 
@@ -93,6 +103,9 @@
             margin-top: 1.5rem;
             width: 65%;
         }
+        @media only screen and (min-width: 480px) {
+            font-size: 1.4rem;
+        }
 
         input {
             padding:0.8rem;
@@ -118,6 +131,9 @@
             margin-top: 1.5rem;
             width: 65%;
         }
+        @media only screen and (min-width: 480px) {
+            font-size: 1.4rem;
+        }
 
         textarea {
             height: 13rem;
@@ -132,6 +148,9 @@
              }
              @media only screen and (min-width: 700px) {
                 height: 20rem;
+            }
+            @media only screen and (min-width: 480px) {
+                height: 24rem;
             }
 
         }

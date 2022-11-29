@@ -7,6 +7,7 @@
     margin-left: 1rem;
     width: 100%;
     height: 92vh;
+    text-align: center;
 
     &__logo {
         width: 100%;
@@ -14,6 +15,10 @@
         margin-bottom: 1.5rem;
         @media only screen and (min-width: 700px) {
             width: 80%;
+            margin-bottom: 2rem;
+        }
+        @media only screen and (min-width: 900px) {
+            width: 60%;
             margin-bottom: 2rem;
         }
     }

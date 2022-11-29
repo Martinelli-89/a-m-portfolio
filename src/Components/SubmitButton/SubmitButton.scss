@@ -18,6 +18,13 @@
         transform: translateX(3.5rem);
         margin-top: 3rem;
     }
+    @media only screen and (min-width: 1000px) {
+        width: 32%;
+        height: 2.8rem;
+        transform: translateX(5rem);
+        margin-top: 3rem;
+        font-size: 1.2rem;
+    }
 }
 
 .loading {
@@ -40,7 +47,13 @@
         transform: translateX(3.5rem);
         margin-top: 3rem;
     }
-
+    @media only screen and (min-width: 1000px) {
+        width: 32%;
+        height: 2.8rem;
+        transform: translateX(5rem);
+        margin-top: 3rem;
+        font-size: 1.2rem;
+    }
 }
 
 .error {
@@ -62,6 +75,13 @@
         transform: translateX(3.5rem);
         margin-top: 3rem;
     }
+    @media only screen and (min-width: 1000px) {
+        width: 32%;
+        height: 2.8rem;
+        transform: translateX(5rem);
+        margin-top: 3rem;
+        font-size: 1.2rem;
+    }
 }
 
 .sent {
@@ -81,6 +101,13 @@
         height: 2.5rem;
         transform: translateX(3.5rem);
         margin-top: 3rem;
+    }
+    @media only screen and (min-width: 1000px) {
+        width: 32%;
+        height: 2.8rem;
+        transform: translateX(5rem);
+        margin-top: 3rem;
+        font-size: 1.2rem;
     }
 }
 

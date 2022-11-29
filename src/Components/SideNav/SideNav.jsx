@@ -41,17 +41,21 @@ const SideNav = () => {
     return (
 
         <nav className="sideNav">
-            < a href="https://github.com/Martinelli-89" target="_blank">
+            <a href="https://github.com/Martinelli-89" target="_blank">
                 <img 
                     src={git? gitRed : gitBlue} 
                     alt="github logo" 
                     className="sideNav__logo"
                     onMouseEnter={handleMouseOverGit} onMouseLeave={handleMouseLeaveGit}></img>
             </a>
-            <img src={linkedin? linkedinRed : linkedinBlue} alt="linkedin logo" className="sideNav__logo"
-            onMouseEnter={handleMouseOverLinkedin} onMouseLeave={handleMouseLeaveLinkedin}></img>
-            <img src={cv? cvRed : cvBlue} alt="cv logo" className="sideNav__logo"
-            onMouseEnter={handleMouseOverCv} onMouseLeave={handleMouseLeaveCv}></img>
+            <a href="https://github.com/Martinelli-89" target="_blank">
+                <img src={linkedin? linkedinRed : linkedinBlue} alt="linkedin logo" className="sideNav__logo"
+                onMouseEnter={handleMouseOverLinkedin} onMouseLeave={handleMouseLeaveLinkedin}></img>
+            </a>
+            <a href="https://github.com/Martinelli-89" target="_blank">
+                <img src={cv? cvRed : cvBlue} alt="cv logo" className="sideNav__logo"
+                onMouseEnter={handleMouseOverCv} onMouseLeave={handleMouseLeaveCv}></img>
+            </a>
             <div>
                 <div className="sideNav__verticalLine"></div>
             </div>
