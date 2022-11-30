@@ -55,7 +55,7 @@ const ContactForm = () => {
 
     return (
 
-        <section className="form">
+        <section className="form" id="contactMe">
             <div className="contactForm">
                 <div className="contactForm__name">
                     <p>Name</p>

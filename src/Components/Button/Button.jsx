@@ -2,7 +2,7 @@ import "./Button.scss";
 import { useState} from "react";
 import MenuOption from "../MenuOption/MenuOption";
 
-const Button = ({text, onClick, options}) => {
+const Button = ({text, onClick, options, links}) => {
 
     const [click, setClick] = useState(false);
     const [startUnmount, setStartUnmount] = useState(false);
@@ -32,6 +32,7 @@ const Button = ({text, onClick, options}) => {
                         text={option} 
                         delay={delay}
                         startedUnmount={startUnmount}
+                        link={links[index]}
                     />
                 </div>
             )
