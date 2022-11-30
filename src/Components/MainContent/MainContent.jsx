@@ -1,11 +1,10 @@
+import { useState } from "react";
 import Intro from "../Intro/Intro";
 import Career from "../Career/Career";
 import Projects from "../Projects/Projects";
 import projectsData from "../../Assets/Data/ProjectsData";
 import ContactForm from "../ContactForm/ContactForm";
-
 import "./MainContent.scss";
-import { useState } from "react";
 
 const MainContent = () => {
 
@@ -44,7 +43,6 @@ const MainContent = () => {
                 <ContactForm />
             </div>
         </section>
-
     )
 
 }

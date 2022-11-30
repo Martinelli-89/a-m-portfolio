@@ -68,11 +68,9 @@ const Logo = () => {
         </div>
 
     return (
-
         <>
             {logo}
         </>
-
     );
 
     }

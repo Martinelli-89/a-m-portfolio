@@ -1,11 +1,12 @@
 import {React, useEffect, useState} from 'react';
-import "./EntryPage.scss";
 import Logo from "../Logo/Logo.jsx";
 import MainPage from '../MainPage/MainPage';
+import "./EntryPage.scss";
 
 const EntryPage = () => {
 
     const [mainPage, setMainPage] = useState(false);
+    let render;
 
     useEffect(() => {
         let timer = setTimeout(() => {
@@ -14,8 +15,6 @@ const EntryPage = () => {
             clearTimeout(timer);
           };
     },[])
-
-    let render;
 
     if(mainPage == false) {
         render =
@@ -31,13 +30,10 @@ const EntryPage = () => {
             </>;
     }
     
-
     return (
-
         <>
             {render}
         </>
-
     );
 
 }

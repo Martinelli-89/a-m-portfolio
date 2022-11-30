@@ -1,10 +1,9 @@
-import "./Intro.scss";
 import {React} from 'react';
+import "./Intro.scss";
 
 const Intro = () => {
 
     return (
-
         <section className="intro" id="landing">
             <div className="fadeIn">
                 <p className="fadeIn__char one">C</p>
@@ -155,7 +154,6 @@ const Intro = () => {
                 </section>
             </section>
         </section>
-
     );
 
 }
