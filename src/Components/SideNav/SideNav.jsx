@@ -49,7 +49,7 @@ const SideNav = () => {
                         className="sideNav__logo"
                         onMouseEnter={handleMouseOverGit} onMouseLeave={handleMouseLeaveGit}></img>
                 </a>
-                <a href="https://github.com/Martinelli-89" target="_blank">
+                <a href="https://www.linkedin.com/in/alex-martinelli-776b94258/" target="_blank">
                     <img src={linkedin? linkedinRed : linkedinBlue} alt="linkedin logo" className="sideNav__logo"
                     onMouseEnter={handleMouseOverLinkedin} onMouseLeave={handleMouseLeaveLinkedin}></img>
                 </a>
