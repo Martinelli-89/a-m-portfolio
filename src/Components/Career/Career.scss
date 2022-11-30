@@ -1,13 +1,18 @@
 @use "../../Styles/Fonts.scss" as *;
+@use "../../Styles/Color.scss" as *;
 
 .resume {
     min-height: 94vh;
-    //max-height: 94vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-family: $main;
+
+    &__title {
+        color:$red;
+    }
 }
 
 .career {
@@ -46,7 +51,7 @@
         grid-area: dates;
         display: flex;
         justify-content: space-between;
-        color: #bb9af7;
+        color: $purple;
         font-size: 1rem;
         align-self:flex-end;
         justify-self: stretch;
@@ -68,7 +73,7 @@
 
     &__resume {
         grid-area: resume;
-        color: #bb9af7;
+        color: $purple;
         display: grid;
         grid-template-rows: 20% 15% 65%;
         grid-template-areas: "venue" 
@@ -82,7 +87,7 @@
         grid-area: venue;
         font-size: 1.2rem;
         align-self: flex-end;
-        color: #2ac3de;
+        color: $cyan;
         @media only screen and (min-height: 800px) and (min-width: 300px) {
             font-size: 1.3rem;
          }
@@ -107,7 +112,7 @@
         font-size: 1rem;
         width: 80%;
         height: 100%;
-        color: #cfc9c2;
+        color: $cream;
         place-self: center;
         text-align: center;
         @media only screen and (min-height: 800px) and (min-width: 390px) {
@@ -120,7 +125,7 @@
 }
 
 .selected {
-    color: #f7768e;
+    color: $red;
     font-weight: bolder;
 }
 
@@ -134,7 +139,7 @@
     justify-content: center;
     align-items: center;
     font-family: $main;
-    background-color:#cfc9c2;
+    background-color:$cream;
     border-radius: 61% 32% 57% 30% / 52% 46% 39% 32%;
     @media only screen and (min-width: 480px) {
         width: 80%;
@@ -156,7 +161,7 @@
     }
 
     &__title {
-        color:#f7768e;
+        color:$red;
         font-weight: bolder;
         font-size: 1.3rem;
         @media only screen and (min-width: 480px) {
@@ -171,7 +176,7 @@
     }
 
     &__degree {
-        color: #24283b;
+        color: $dark-purple;
         margin-bottom: 0.3rem;
         @media only screen and (min-width: 480px) {
             font-size: 1.1rem;

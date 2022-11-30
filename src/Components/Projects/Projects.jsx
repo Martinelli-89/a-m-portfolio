@@ -9,6 +9,7 @@ const Projects = ({gitRepo, gitLive, img, name, intro, languages, updateProject}
 return (
 
     <section className="projects" id="projects">
+        <h1 className="projects__title">Projects</h1>
         <div className="projects__nextPrevious">
             <img src={left} alt="previous project" id="previous" onClick={updateProject}></img>
             <img src={right} alt="next project" id="next" onClick={updateProject}></img>

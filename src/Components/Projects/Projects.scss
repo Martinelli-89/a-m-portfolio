@@ -1,4 +1,5 @@
 @use "../../Styles/Fonts.scss" as *;
+@use "../../Styles/Color.scss" as *;
 
 .projects {
 
@@ -9,7 +10,7 @@
     grid-template-columns: 20% 70% 10%;
     grid-template-rows: 18% 5% 1% 38% 8% 15% 5% 5% 5%;
     grid-template-areas: 
-    "empty empty"
+    "title title"
     "emptyA arrows"
     ". ."
     "links projPreview"
@@ -54,6 +55,13 @@
         width: 60%;
     }
     
+    &__title {
+        grid-area: title;
+        color: $red;
+        justify-self: center;
+        align-self: center;
+        font-size: 1.5rem;
+    }
 
     &__nextPrevious {
         grid-area: arrows;
@@ -134,7 +142,7 @@
         grid-area: projName;
         width: 100%;
         height: 100%;
-        color: #bb9af7;
+        color: $purple;
         display: flex;
         justify-content: end;
         align-items: center;
@@ -162,7 +170,7 @@
         justify-content: end;
         font-size: 0.9rem;
         text-align: end;
-        color: #cfc9c2;
+        color: $cream;
         @media only screen and (min-height: 800px) and (min-width: 390px) {
             font-size: 1.1rem;
          }
@@ -224,7 +232,7 @@
         font-size: 0.8rem;
         font-weight: bold;
         text-align: end;
-        color: #bb9af7;
+        color: $purple;
         @media only screen and (min-height: 800px) and (min-width: 390px) {
             font-size: 1rem;
          }

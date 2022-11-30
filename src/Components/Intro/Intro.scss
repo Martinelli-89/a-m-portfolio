@@ -1,4 +1,5 @@
 @use "../../Styles/Fonts.scss" as *;
+@use "../../Styles/Color.scss" as *;
 
 .intro {
     display: flex;
@@ -244,7 +245,7 @@
     }
 
     &__char {
-        color: #cfc9c2;
+        color: $cream;
         animation: fadeIn 0.3s forwards ease-out;
         opacity: 0;
         min-height: 2.5rem;
@@ -262,8 +263,8 @@
     }
 
     &__name {
-        color:#bb9af7;
-        text-shadow: 2px 2px #cfc9c2;
+        color:$purple;
+        text-shadow: 2px 2px $cream;
         animation: fadeIn 0.3s forwards ease-out;
         opacity: 0;
         min-height: 2.5rem;
@@ -344,7 +345,7 @@
           }
 
           .top {
-            background-color: #f7768e;
+            background-color: $red;
             transform: rotateX(90deg) translateZ(15px);
             @media only screen and (min-width: 700px) {
                 transform: rotateX(90deg) translateZ(20px);
@@ -357,7 +358,7 @@
             
           }
           .bottom {
-            background-color: #b4f9f8;
+            background-color: $cyan-light;
             transform: rotateX(-90deg) translateZ(15px);
             @media only screen and (min-width: 700px) {
                 transform: rotateX(-90deg) translateZ(20px);
@@ -368,7 +369,7 @@
           }
           
           .right {
-            background-color: #73daca;
+            background-color: $cyan-green;
             transform: rotateY(90deg) translateZ(15px);
             @media only screen and (min-width: 700px) {
                 transform: rotateY(90deg) translateZ(20px);
@@ -379,7 +380,7 @@
 
           }
           .left {
-            background-color: #7aa2f7;
+            background-color: $blue;
             transform: rotateY(-90deg) translateZ(15px);
             @media only screen and (min-width: 700px) {
                 transform: rotateY(-90deg) translateZ(20px);
@@ -390,7 +391,7 @@
           }
           
           .front {
-            background-color: #bb9af7;
+            background-color: $purple;
             transform: rotateX(0deg) translateZ(15px);
             @media only screen and (min-width: 700px) {
                 transform: rotateX(0deg) translateZ(20px);
@@ -400,7 +401,7 @@
             }
           }
           .back {
-            background-color: #cfc9c2;
+            background-color: $cream;
             transform: rotateX(-180deg) translateZ(15px);
             @media only screen and (min-width: 700px) {
                 transform: rotateX(-180deg) translateZ(20px);
@@ -503,7 +504,7 @@
 }
 
 .cube__letter {
-        color: #24283b;
+        color: $dark-purple;
         transform: rotateZ(180deg);
 }
 

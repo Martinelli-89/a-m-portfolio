@@ -42,6 +42,7 @@ const Career = () => {
     return (
 
         <div className="resume" id="aboutMe">
+            <h1 className="resume__title">About me</h1>
             <div className="education">
                 <p className="education__title">Education</p>
                 <br></br>

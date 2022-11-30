@@ -5,7 +5,7 @@ const Intro = () => {
 
     return (
 
-        <section className="intro">
+        <section className="intro" id="landing">
             <div className="fadeIn">
                 <p className="fadeIn__char one">C</p>
                 <p className="fadeIn__char two">i</p>
