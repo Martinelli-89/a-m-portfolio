@@ -2,17 +2,17 @@
 @use "../../Styles/Color.scss" as *;
 
 .intro {
+    min-height: 92vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+    overflow-x: hidden;
     font-family: $main;
+    font-size: 1.5rem;
     line-height: 2.5rem;
-    min-height: 92vh;
     font-weight:900;
     letter-spacing: 0.15rem;
-    overflow-x: hidden;
 
 }
 
@@ -54,202 +54,140 @@
 
     .one {
         grid-area: one;
-        min-width: 0;
-        min-height: 0;
     }
 
     .two {
         grid-area: two;
-        min-width: 0;
-        min-height: 0;
     }
 
     .three {
         grid-area: three;
-        min-width: 0;
-        min-height: 0;
     }
 
     .four {
         grid-area: four;
-        min-width: 0;
-        min-height: 0;
     }
 
     .five {
         grid-area: five;
-        min-width: 0;
-        min-height: 0;
     }
 
     .six {
         grid-area: six;
-        min-width: 0;
-        min-height: 0;
     }
 
     .seven {
         grid-area: seven;
-        min-width: 0;
-        min-height: 0;
     }
 
     .eight {
         grid-area: eight;
-        min-width: 0;
-        min-height: 0;
     }
 
     .nine {
         grid-area: nine;
-        min-width: 0;
-        min-height: 0;
     }
 
     .ten {
         grid-area: ten;
-        min-width: 0;
-        min-height: 0;
     }
 
     .eleven {
         grid-area: eleven;
-        min-width: 0;
-        min-height: 0;
     }
 
     .twelve {
         grid-area: twelve;
-        min-width: 0;
-        min-height: 0;
     }
 
     .fourteen {
         grid-area: fourteen;
-        min-width: 0;
-        min-height: 0;
     }
 
     .fifteen {
         grid-area: fifteen;
-        min-width: 0;
-        min-height: 0;
     }
 
     .sixteen {
         grid-area: sixteen;
-        min-width: 0;
-        min-height: 0;
     }
 
     .seventeen {
         grid-area: seventeen;
-        min-width: 0;
-        min-height: 0;
     }
 
     .eighteen {
         grid-area: eighteen;
-        min-width: 0;
-        min-height: 0;
     }
 
     .nineteen {
         grid-area: nineteen;
-        min-width: 0;
-        min-height: 0;
     }
 
     .twenty {
         grid-area: twenty;
-        min-width: 0;
-        min-height: 0;
     }
     
     .twentyOne {
         grid-area: twentyOne;
-        min-width: 0;
-        min-height: 0;
     }
 
     .twentyTwo {
         grid-area: twentyTwo;
-        min-width: 0;
-        min-height: 0;
     }
 
     .twentyThree {
         grid-area: twentyThree;
-        min-width: 0;
-        min-height: 0;
     }
 
     .twentyFour {
         grid-area: twentyFour;
-        min-width: 0;
-        min-height: 0;
     }
 
     .twentyFive {
         grid-area: twentyFive;
-        min-width: 0;
-        min-height: 0;
     }
 
     .twentySix {
         grid-area: twentySix;
-        min-width: 0;
-        min-height: 0;
     }
 
     .twentySeven {
         grid-area: twentySeven;
-        min-width: 0;
-        min-height: 0;
     }
 
     .twentyEight {
         grid-area: twentyEight;
-        min-width: 0;
-        min-height: 0;
     }
 
     .twentyNine {
         grid-area: twentyNine;
-        min-width: 0;
-        min-height: 0;
     }
 
     .thirty {
         grid-area: thirty;
-        min-width: 0;
-        min-height: 0;
     }
 
     .thirtyOne {
         grid-area: thirtyOne;
-        min-width: 0;
-        min-height: 0;
     }
 
     .thirtyTwo {
         grid-area: thirtyTwo;
-        min-width: 0;
-        min-height: 0;
     }
 
     .thirtyThree {
         grid-area: thirtyThree;
-        min-width: 0;
-        min-height: 0;
     }
 
     &__char {
         color: $cream;
-        animation: fadeIn 0.3s forwards ease-out;
         opacity: 0;
+        min-width: 0;
+        min-height: 0;
         min-height: 2.5rem;
         max-height: 2.5rem;
+        animation: fadeIn 0.3s forwards ease-out;
         @media only screen and (min-height: 800px) and (min-width: 390px) {
             animation: fadeInHeight800 0.3s forwards ease-out;
          }
@@ -265,10 +203,12 @@
     &__name {
         color:$purple;
         text-shadow: 2px 2px $cream;
-        animation: fadeIn 0.3s forwards ease-out;
         opacity: 0;
         min-height: 2.5rem;
         max-height: 2.5rem;
+        min-width: 0;
+        min-height: 0;
+        animation: fadeIn 0.3s forwards ease-out;
         @media only screen and (min-height: 800px) and (min-width: 390px) {
             animation: fadeInHeight800 0.3s forwards ease-out;
          }
@@ -328,10 +268,10 @@
         }
 
         .face {
-            position: absolute;
             width: 100%;
             height: 100%;
             display: flex;
+            position: absolute;
             justify-content: center;
             align-items: center;
             font-weight: bold;
