@@ -7,11 +7,17 @@ const Nav = () => {
 
     return (
 
-        <section className="nav">
-            <img src={logo} alt="logo" className='nav__logo'></img>
-            <div className='nav__buttons'>
-                <Button text={"menu"} options={["Projects", "About me", "Get in touch"]} onClick={()=> console.log("hello")} />
-            </div>
+        <section className='mainPage__nav'>
+            <section className="nav">
+                <img src={logo} alt="logo" className='nav__logo'></img>
+                <div className='nav__buttons'>
+                    <Button 
+                        text={"menu"} 
+                        options={["Projects", "About me", "Get in touch"]} 
+                        links={["#projects", "#aboutMe", "#contactMe"]}
+                     />
+                </div>
+            </section>
         </section>
 
     );
