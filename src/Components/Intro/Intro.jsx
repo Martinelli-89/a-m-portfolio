@@ -42,46 +42,55 @@ const Intro = () => {
             </div>
             <section className="contactMe">
                 <div className="cubes">
-                    <div className="container">
-                        <div className="cube" style={{animationDelay: "0s"}}>
-                            <div className="face front"><h5 className="cube__letter">C</h5></div>
-                            <div className="face back"></div>
-                            <div className="face right"></div>
-                            <div className="face left"></div>
-                            <div className="face top"></div>
-                            <div className="face bottom"></div>
+                    <a href="#contactMe">
+                        <div className="container">
+                            <div className="cube" style={{animationDelay: "0s"}}>
+                                <div className="face front"><h5 className="cube__letter">C</h5></div>
+                                <div className="face back"></div>
+                                <div className="face right"></div>
+                                <div className="face left"></div>
+                                <div className="face top"></div>
+                                <div className="face bottom"></div>
+                            </div>
                         </div>
-                    </div>
-                    <div className="container cube2 ">
-                        <div className="cube" style={{animationDelay: "0.2s"}}>
-                            <div className="face front"><h5 className="cube__letter">O</h5></div>
-                            <div className="face back"></div>
-                            <div className="face right"></div>
-                            <div className="face left"></div>
-                            <div className="face top"></div>
-                            <div className="face bottom"></div>
+                    </a>
+                    <a href="#contactMe">
+                        <div className="container cube2 ">
+                            <div className="cube" style={{animationDelay: "0.2s"}}>
+                                <div className="face front"><h5 className="cube__letter">O</h5></div>
+                                <div className="face back"></div>
+                                <div className="face right"></div>
+                                <div className="face left"></div>
+                                <div className="face top"></div>
+                                <div className="face bottom"></div>
+                            </div>
                         </div>
-                    </div>
-                    <div className="container cube3">
-                        <div className="cube" style={{animationDelay: "0.4s"}}>
-                            <div className="face front"><h5 className="cube__letter">N</h5></div>
-                            <div className="face back"></div>
-                            <div className="face right"></div>
-                            <div className="face left"></div>
-                            <div className="face top"></div>
-                            <div className="face bottom"></div>
+                    </a>
+                    <a href="#contactMe">
+                        <div className="container cube3">
+                            <div className="cube" style={{animationDelay: "0.4s"}}>
+                                <div className="face front"><h5 className="cube__letter">N</h5></div>
+                                <div className="face back"></div>
+                                <div className="face right"></div>
+                                <div className="face left"></div>
+                                <div className="face top"></div>
+                                <div className="face bottom"></div>
+                            </div>
                         </div>
-                    </div>
-                    <div className="container cube4">
-                        <div className="cube" style={{animationDelay: "0.6s"}}>
-                            <div className="face front"><h5 className="cube__letter">T</h5></div>
-                            <div className="face back"></div>
-                            <div className="face right"></div>
-                            <div className="face left"></div>
-                            <div className="face top"></div>
-                            <div className="face bottom"></div>
+                    </a>
+                    <a href="#contactMe">
+                        <div className="container cube4">
+                            <div className="cube" style={{animationDelay: "0.6s"}}>
+                                <div className="face front"><h5 className="cube__letter">T</h5></div>
+                                <div className="face back"></div>
+                                <div className="face right"></div>
+                                <div className="face left"></div>
+                                <div className="face top"></div>
+                                <div className="face bottom"></div>
+                            </div>
                         </div>
-                    </div>
+                    </a>
+                    <a href="#contactMe">
                     <div className="container cube5">
                         <div className="cube" style={{animationDelay: "0.8s"}}>
                             <div className="face front"><h5 className="cube__letter">A</h5></div>
@@ -92,48 +101,57 @@ const Intro = () => {
                             <div className="face bottom"></div>
                         </div>
                     </div>
-                    <div className="container cube6">
-                        <div class="cube" style={{animationDelay: "1s"}}>
-                            <div className="face front"><h5 className="cube__letter">C</h5></div>
-                            <div className="face back"></div>
-                            <div className="face right"></div>
-                            <div className="face left"></div>
-                            <div className="face top"></div>
-                            <div className="face bottom"></div>
+                    </a>
+                    <a href="#contactMe">
+                        <div className="container cube6">
+                            <div class="cube" style={{animationDelay: "1s"}}>
+                                <div className="face front"><h5 className="cube__letter">C</h5></div>
+                                <div className="face back"></div>
+                                <div className="face right"></div>
+                                <div className="face left"></div>
+                                <div className="face top"></div>
+                                <div className="face bottom"></div>
+                            </div>
                         </div>
-                    </div>
-                    <div className="container cube7">
-                        <div className="cube" style={{animationDelay: "1.2s"}}>
-                            <div className="face front"><h5 className="cube__letter">T</h5></div>
-                            <div className="face back"></div>
-                            <div className="face right"></div>
-                            <div className="face left"></div>
-                            <div className="face top"></div>
-                            <div className="face bottom"></div>
+                    </a>
+                    <a href="#contactMe">
+                        <div className="container cube7">
+                            <div className="cube" style={{animationDelay: "1.2s"}}>
+                                <div className="face front"><h5 className="cube__letter">T</h5></div>
+                                <div className="face back"></div>
+                                <div className="face right"></div>
+                                <div className="face left"></div>
+                                <div className="face top"></div>
+                                <div className="face bottom"></div>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <section className="cubes" style={{animationDelay: "1.4s"}}>
-                    <div className="container cube8">
-                        <div className="cube">
-                            <div className="face front"><h5 className="cube__letter">M</h5></div>
-                            <div className="face back"></div>
-                            <div className="face right"></div>
-                            <div className="face left"></div>
-                            <div className="face top"></div>
-                            <div className="face bottom"></div>
+                    <a href="#contactMe">
+                        <div className="container cube8">
+                            <div className="cube">
+                                <div className="face front"><h5 className="cube__letter">M</h5></div>
+                                <div className="face back"></div>
+                                <div className="face right"></div>
+                                <div className="face left"></div>
+                                <div className="face top"></div>
+                                <div className="face bottom"></div>
+                            </div>
                         </div>
-                    </div>
-                    <div className="container cube9">
-                        <div className="cube" style={{animationDelay: "1.6s"}}>
-                            <div className="face front"><h5 className="cube__letter">E</h5></div>
-                            <div className="face back"></div>
-                            <div className="face right"></div>
-                            <div className="face left"></div>
-                            <div className="face top"></div>
-                            <div className="face bottom"></div>
+                    </a>
+                    <a href="#contactMe">
+                        <div className="container cube9">
+                            <div className="cube" style={{animationDelay: "1.6s"}}>
+                                <div className="face front"><h5 className="cube__letter">E</h5></div>
+                                <div className="face back"></div>
+                                <div className="face right"></div>
+                                <div className="face left"></div>
+                                <div className="face top"></div>
+                                <div className="face bottom"></div>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </section>
             </section>
         </section>
