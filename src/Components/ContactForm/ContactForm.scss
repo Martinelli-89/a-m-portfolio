@@ -1,13 +1,22 @@
 @use "../../Styles/Fonts.scss" as *;
+@use "../../Styles/Color.scss" as *;
 
 
 .form {
     height: 92vh;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #1a1b26;
+    color: $dark;
+
+    &__title {
+        font-family: $main;
+        color: $red;
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+    }
 
     p {
         transform: translateX(1rem);
@@ -16,7 +25,7 @@
 
 .contactForm {
 
-    height: 90%;
+    height: 80%;
     width: 92%;
     font-family: $main;
     display: flex;
@@ -24,7 +33,7 @@
     align-items: center;
     flex-direction: column;
     border-radius: 56% 40% 44% 37% / 31% 57% 34% 58% ; 
-    background-color: #bb9af7;
+    background-color: $purple;
     @media only screen and (min-height: 800px) and (min-width: 390px) {
         height: 80%;
         width: 85%;
@@ -60,11 +69,11 @@
 
         input {
             padding:0.8rem;
-            background-color: #cfc9c2;
-            height: 2rem;
+            background-color: $cream;
+            height: 1.5rem;
             border: none;
             border-radius: 25px;
-            color:#1a1b26;
+            color:$dark;
         }
     }
 
@@ -91,11 +100,11 @@
 
         input {
             padding:0.8rem;
-            background-color: #cfc9c2;
-            height: 2rem;
+            background-color: $cream;
+            height: 1.5rem;
             border: none;
             border-radius: 25px;
-            color:#1a1b26;
+            color:$dark;
         }
     }
 
@@ -121,11 +130,11 @@
 
         input {
             padding:0.8rem;
-            background-color: #cfc9c2;
-            height: 2rem;
+            background-color: $cream;
+            height: 1.5rem;
             border: none;
             border-radius: 25px;
-            color:#1a1b26;
+            color:$dark;
         }
     }
     
@@ -151,13 +160,13 @@
         }
 
         textarea {
-            height: 13rem;
+            height: 10.5rem;
             padding:0.8rem;
-            background-color: #cfc9c2;
+            background-color: $cream;
             border: none;
             border-radius: 25px;
             overflow-x: scroll;
-            color:#1a1b26;
+            color:$dark;
             @media only screen and (min-height: 800px) and (min-width: 390px) {
                 height: 15rem;
              }

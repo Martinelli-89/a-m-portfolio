@@ -1,11 +1,10 @@
+import { useState } from "react";
 import Intro from "../Intro/Intro";
 import Career from "../Career/Career";
 import Projects from "../Projects/Projects";
 import projectsData from "../../Assets/Data/ProjectsData";
 import ContactForm from "../ContactForm/ContactForm";
-
 import "./MainContent.scss";
-import { useState } from "react";
 
 const MainContent = () => {
 
@@ -34,7 +33,7 @@ const MainContent = () => {
                 <Projects 
                     gitRepo={projectsData[projectToDisplay].repo}
                     gitLive={projectsData[projectToDisplay].link}
-                    img={projectsData[projectToDisplay].imgSource}
+                    video={projectsData[projectToDisplay].video}
                     name={projectsData[projectToDisplay].projName}
                     intro={projectsData[projectToDisplay].description}
                     languages={projectsData[projectToDisplay].code}
@@ -44,7 +43,6 @@ const MainContent = () => {
                 <ContactForm />
             </div>
         </section>
-
     )
 
 }

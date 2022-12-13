@@ -1,3 +1,5 @@
+@use "./Styles/Color.scss" as *;
+
 * {
     margin: 0px;
     padding: 0px;
@@ -5,17 +7,20 @@
 }
 
 .App {
-
-    background-color: #1a1b26;
     width: 100vw;
     height: 100vh;
+    background-color: $dark;
     overflow-x: hidden;
-
 }
 
 ::-webkit-scrollbar {
     display: none;
-  }
+}
+
+a {
+    cursor: pointer;
+}
+
 a:link {
     text-decoration: none;
 }

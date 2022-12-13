@@ -2,7 +2,6 @@ import "./MenuOption.scss";
 
 const MenuOption = ({text, delay, startedUnmount, handleEndAnimation, link}) => {
 
-    console.log(link)
     return (
         <>
             <a href={ link? `${link}` : "#contactMe"}>

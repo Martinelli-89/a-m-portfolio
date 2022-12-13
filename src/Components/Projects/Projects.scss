@@ -1,4 +1,5 @@
 @use "../../Styles/Fonts.scss" as *;
+@use "../../Styles/Color.scss" as *;
 
 .projects {
 
@@ -9,7 +10,7 @@
     grid-template-columns: 20% 70% 10%;
     grid-template-rows: 18% 5% 1% 38% 8% 15% 5% 5% 5%;
     grid-template-areas: 
-    "empty empty"
+    "title title"
     "emptyA arrows"
     ". ."
     "links projPreview"
@@ -36,9 +37,10 @@
     @media only screen and (min-width: 1150px) {
         width: 80%;
         height: 65vh;
-        grid-template-rows: 5% 30% 30% 20% 5% 10%;
+        grid-template-rows: 5% 5% 27.5% 27.5% 20% 5% 10%;
         grid-template-columns: 65% 35%;
         grid-template-areas: 
+        "title title"
         "arrows ."
         "projPreview projName"
         "projPreview projIntro"
@@ -54,6 +56,13 @@
         width: 60%;
     }
     
+    &__title {
+        grid-area: title;
+        color: $red;
+        justify-self: center;
+        align-self: center;
+        font-size: 1.8rem;
+    }
 
     &__nextPrevious {
         grid-area: arrows;
@@ -86,7 +95,7 @@
         align-items: center;
 
         
-        img {
+        video {
             width: 100%;
             aspect-ratio: 1 / 1;
             @media only screen and (min-width: 450px) {
@@ -134,10 +143,10 @@
         grid-area: projName;
         width: 100%;
         height: 100%;
-        color: #bb9af7;
         display: flex;
         justify-content: end;
         align-items: center;
+        color: $purple;
         font-size: 2.2rem;
         font-weight: bold;
         @media only screen and (min-width: 700px) {
@@ -149,12 +158,11 @@
             font-size: 3.5rem;
         }
         @media only screen and (min-width: 1500px) {
-            font-size: 4rem;
+            font-size: 3.7rem;
         }
     }
 
     &__description {
-        padding-left: 1rem;
         grid-area: projIntro;
         width: 100%;
         height: 100%;
@@ -162,7 +170,8 @@
         justify-content: end;
         font-size: 0.9rem;
         text-align: end;
-        color: #cfc9c2;
+        color: $cream;
+        padding-left: 1rem;
         @media only screen and (min-height: 800px) and (min-width: 390px) {
             font-size: 1.1rem;
          }
@@ -170,17 +179,17 @@
             font-size: 1rem;
         }
         @media only screen and (min-width: 700px) {
-            font-size: 1.3rem;
+            font-size: 1.1rem;
             align-items: center;
             width: 80%;
             justify-self: end;
         }
         @media only screen and (min-width: 1150px) {
             align-items: center;
-            font-size: 1.3rem;
+            font-size: 1.2rem;
         }
         @media only screen and (min-width: 1500px) {
-            font-size: 1.6rem;
+            font-size: 1.4rem;
         }
     }
 
@@ -221,10 +230,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: end;
         font-size: 0.8rem;
         font-weight: bold;
-        text-align: end;
-        color: #bb9af7;
+        color: $purple;
         @media only screen and (min-height: 800px) and (min-width: 390px) {
             font-size: 1rem;
          }

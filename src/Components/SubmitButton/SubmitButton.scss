@@ -1,11 +1,11 @@
 @use "../../Styles/Fonts.scss" as *;
+@use "../../Styles/Color.scss" as *;
 
-.submit {
-    margin-top: 2rem;
+
+.submitStand {
+    margin-top: 1rem;
     width: 36%;
     height: 2rem;
-    background-color: #414868;
-    color:#cfc9c2;
     border-radius: 25px;
     transform: translateX(2.25rem);
     display: flex;
@@ -26,124 +26,56 @@
         font-size: 1.2rem;
     }
     @media only screen and (min-width: 1500px) {
-        transform: translateX(3rem);
+        transform: translateX(2rem);
     }
+}
+
+.submit {
+
+    background-color: $purple-grey;
+    color:$cream;
 }
 
 .loading {
-    margin-top: 2rem;
-    width: 36%;
-    height: 2rem;
-    background-color: #414868;
-    color:#cfc9c2;
-    border-radius: 25px;
-    transform: translateX(2.25rem);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: $purple-grey;
+    color:$cream;
     animation: goGreen 4s ease-out infinite;
     animation-direction: alternate;
-    font-weight: bold;
-    @media only screen and (min-width: 700px) {
-        width: 30%;
-        height: 2.5rem;
-        transform: translateX(3.5rem);
-        margin-top: 3rem;
-    }
-    @media only screen and (min-width: 1000px) {
-        width: 32%;
-        height: 2.8rem;
-        transform: translateX(5rem);
-        margin-top: 3rem;
-        font-size: 1.2rem;
-    }
-    @media only screen and (min-width: 1500px) {
-        transform: translateX(3rem);
-    }
 }
 
 .error {
-    margin-top: 2rem;
-    width: 36%;
-    height: 2rem;
-    background-color: #9ece6a;;
-    color:#414868;
-    border-radius: 25px;
-    transform: translateX(2.25rem);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: $green;
+    color:$purple-grey;
     animation: goRed 0.4s forwards;
-    font-weight: bold;
-    @media only screen and (min-width: 700px) {
-        width: 30%;
-        height: 2.5rem;
-        transform: translateX(3.5rem);
-        margin-top: 3rem;
-    }
-    @media only screen and (min-width: 1000px) {
-        width: 32%;
-        height: 2.8rem;
-        transform: translateX(5rem);
-        margin-top: 3rem;
-        font-size: 1.2rem;
-    }
-    @media only screen and (min-width: 1500px) {
-        transform: translateX(3rem);
-    }
 }
 
 .sent {
-    margin-top: 2rem;
-    width: 36%;
-    height: 2rem;
-    background-color: #9ece6a;;
-    color:#414868;
+    background-color: $green;
+    color:$purple-grey;
     border-radius: 25px;
-    transform: translateX(2.25rem);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    @media only screen and (min-width: 700px) {
-        width: 30%;
-        height: 2.5rem;
-        transform: translateX(3.5rem);
-        margin-top: 3rem;
-    }
-    @media only screen and (min-width: 1000px) {
-        width: 32%;
-        height: 2.8rem;
-        transform: translateX(5rem);
-        margin-top: 3rem;
-        font-size: 1.2rem;
-    }
-    @media only screen and (min-width: 1500px) {
-        transform: translateX(3rem);
-    }
 }
 
 @keyframes goGreen {
     0% {
-        background-color: #414868;
+        background-color: $purple-grey;
         color:#cfc9c2;
     }
     70% {
-        color:#414868;
+        color:$purple-grey;
     }
     100% {
-        background-color:#9ece6a;
-        color:#414868;
+        background-color:$green;
+        color:$purple-grey;
     }
 }
 
 @keyframes goRed {
     0% {
-        background-color: #9ece6a;
-        color:#414868;
+        background-color: $green;
+        color:$purple-grey;
     }
     100% {
-        background-color:#f7768e;
-        color:#414868;
+        background-color:$red;
+        color:$purple-grey;
     }
 }

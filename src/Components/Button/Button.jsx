@@ -64,7 +64,6 @@ const Button = ({text, onClick, options, links}) => {
                 {click && <>{menuOptions}</> }
             </div>
         </div>
-
     )
 
 }

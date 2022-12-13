@@ -1,7 +1,7 @@
-import "./Career.scss";
-import flow from "../../Assets/Images/Flow2.svg";
-import career from "../../Assets/Data/CareerData";
 import { useState } from "react";
+import "./Career.scss";
+import career from "../../Assets/Data/CareerData";
+import flow from "../../Assets/Images/Flow2.svg";
 
 const Career = () => {
 
@@ -40,8 +40,8 @@ const Career = () => {
     }
 
     return (
-
         <div className="resume" id="aboutMe">
+            <h1 className="resume__title">About me</h1>
             <div className="education">
                 <p className="education__title">Education</p>
                 <br></br>
@@ -62,7 +62,6 @@ const Career = () => {
                 </div>
             </section>
         </div>
-
     )
 
 }

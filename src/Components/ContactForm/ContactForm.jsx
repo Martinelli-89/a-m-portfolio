@@ -1,7 +1,7 @@
 import { useState } from "react";
-import "./ContactForm.scss";
 import {send} from 'emailjs-com';
 import SubmitButton from "../SubmitButton/SubmitButton";
+import "./ContactForm.scss";
 
 const ContactForm = () => {
 
@@ -11,7 +11,6 @@ const ContactForm = () => {
         subject:'',
         message:''
     });
-
     const [submit, setSubmit] = useState("Submit");
 
     const handleInput = (e) => {
@@ -36,7 +35,6 @@ const ContactForm = () => {
     const handleSubmit = (e) => {
 
         e.preventDefault();
-
         setSubmit("Loading");
         send(
             'service_pt5ej5p',
@@ -54,8 +52,8 @@ const ContactForm = () => {
     }
 
     return (
-
         <section className="form" id="contactMe">
+            <h1 className="form__title">Get in touch</h1>
             <div className="contactForm">
                 <div className="contactForm__name">
                     <p>Name</p>
@@ -76,7 +74,6 @@ const ContactForm = () => {
                 <SubmitButton text={submit} handleSubmit={handleSubmit}/>
             </div>
         </section>
-
     )
 
 }
