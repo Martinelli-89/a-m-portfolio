@@ -4,7 +4,7 @@ import right from "../../Assets/Images/RightArrow.svg";
 import git from "../../Assets/Images/blue-git.svg";
 import gitLiveImg from "../../Assets/Images/gitLiveBlue.svg";
 
-const Projects = ({gitRepo, gitLive, img, name, intro, languages, updateProject}) => {
+const Projects = ({gitRepo, gitLive, video, name, intro, languages, updateProject}) => {
 
 return (
 
@@ -15,7 +15,9 @@ return (
             <img src={right} alt="next project" id="next" onClick={updateProject}></img>
         </div>
         <div className="projects__preview">
-            <img src={img} alt="chess project preview"></img>
+            <video key={video} autoPlay>
+                <source src={video} type="video/mp4" />
+            </video>
         </div>
         <div className="projects__links">
             <a href={gitRepo} target="_blank">

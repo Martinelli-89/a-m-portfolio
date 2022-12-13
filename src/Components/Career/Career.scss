@@ -2,7 +2,7 @@
 @use "../../Styles/Color.scss" as *;
 
 .resume {
-    min-height: 94vh;
+    height: 94vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -12,6 +12,9 @@
 
     &__title {
         color:$red;
+        @media only screen and (min-width: 1000px) {
+            transform: translateY(17vh);
+        }
     }
 }
 

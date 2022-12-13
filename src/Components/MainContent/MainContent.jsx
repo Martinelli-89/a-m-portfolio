@@ -33,7 +33,7 @@ const MainContent = () => {
                 <Projects 
                     gitRepo={projectsData[projectToDisplay].repo}
                     gitLive={projectsData[projectToDisplay].link}
-                    img={projectsData[projectToDisplay].imgSource}
+                    video={projectsData[projectToDisplay].video}
                     name={projectsData[projectToDisplay].projName}
                     intro={projectsData[projectToDisplay].description}
                     languages={projectsData[projectToDisplay].code}
